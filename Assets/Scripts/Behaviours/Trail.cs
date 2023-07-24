@@ -21,7 +21,7 @@ public class Trail : MonoBehaviour
 
     private void Update()
     {
-        var target = trail.GetPosition(currentPointIndex);
+        var target = trail.transform.TransformPoint(trail.GetPosition(currentPointIndex));
 
         if (Vector2.Distance(transform.position, target) < 0.1f) // reached target point
         {
@@ -42,7 +42,8 @@ public class Trail : MonoBehaviour
     {
         var points = new Vector3[trail.positionCount];
         trail.GetPositions(points);
-        var distances = points.Select(point => Vector2.Distance(transform.position, point)).ToList();
+        var worldPoints = points.Select(point => trail.transform.TransformPoint(point));
+        var distances = worldPoints.Select(point => Vector2.Distance(transform.position, point)).ToList();
         var minDistance = distances.Where((_, index) => index != currentPointIndex).Min();
         return distances.IndexOf(minDistance);
     }
