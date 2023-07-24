@@ -12,6 +12,14 @@ public class Policeman : MonoBehaviour
     public LineRenderer trail;
 
     public float speed;
+
+    //loop: cycle the same direction
+    //line: switch direction in the end
+    public enum FollowMode {Line, Loop}
+
+    public FollowMode followMode;
+    private int trailDir = 1;
+
     private bool chasing;
 
     //follow this current point => switch to next => follow line
@@ -45,11 +53,21 @@ public class Policeman : MonoBehaviour
             if (Vector2.Distance(transform.position, target) < 0.1f)
             {
 
-                currentLinePointIndex++;
+                currentLinePointIndex += trailDir;
 
-                //reset count loop
+                //trail end
                 if (currentLinePointIndex == trail.positionCount)
+                {
+                    currentLinePointIndex = followMode == FollowMode.Loop ? 0 : trail.positionCount - 1;
+                    trailDir = followMode == FollowMode.Loop ? 1 : -1;
+                }
+
+                //trail start (loop is false)
+                if (currentLinePointIndex == -1)
+                {
                     currentLinePointIndex = 0;
+                    trailDir = 1;
+                }
 
                 currentLinePoint = trail.GetPosition(currentLinePointIndex);
             }
@@ -60,6 +78,7 @@ public class Policeman : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 
+    //find the closest to enter the trail
     Vector2 GetNewClosestPoint()
     {
         //find the closest point in line
