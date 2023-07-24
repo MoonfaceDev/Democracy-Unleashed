@@ -6,7 +6,6 @@ public class DistanceBrainModule : BrainModule
     public string targetTag;
 
     private Transform target;
-    private const string Distance = "distance";
 
     private void Awake()
     {
@@ -16,6 +15,6 @@ public class DistanceBrainModule : BrainModule
     public override void Run(Animator animator)
     {
         var distance = Vector3.Distance(target.position, animator.transform.position);
-        animator.SetFloat(Distance, distance);
+        animator.SetFloat("distance", distance);
     }
 }
