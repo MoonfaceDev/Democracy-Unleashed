@@ -5,5 +5,5 @@
  */
 public abstract class BrainModule : ScriptableObject
 {
-    public abstract void Run(Animator animator);
+    public abstract void UpdateAnimator(Animator animator);
 }

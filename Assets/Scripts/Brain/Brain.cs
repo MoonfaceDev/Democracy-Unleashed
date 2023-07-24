@@ -8,6 +8,6 @@ public class Brain : MonoBehaviour
 
     private void Update()
     {
-        modules.ForEach(module => module.Run(brainAnimator));
+        modules.ForEach(module => module.UpdateAnimator(brainAnimator));
     }
 }
