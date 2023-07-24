@@ -18,9 +18,4 @@ public class DistanceBrainModule : BrainModule
         var distance = Vector3.Distance(target.position, animator.transform.position);
         animator.SetFloat(Distance, distance);
     }
-
-    public override string[] GetParameters()
-    {
-        return new[] { Distance };
-    }
 }
