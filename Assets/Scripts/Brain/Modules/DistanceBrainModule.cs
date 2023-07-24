@@ -7,14 +7,15 @@ public class DistanceBrainModule : BrainModule
 
     private Transform target;
 
-    private void Awake()
+    public override void Create(Animator animator)
     {
+        base.Create(animator);
         target = GameObject.FindWithTag(targetTag).transform;
     }
 
-    public override void UpdateAnimator(Animator animator)
+    public override void UpdateAnimator()
     {
-        var distance = Vector3.Distance(target.position, animator.transform.position);
-        animator.SetFloat("distance", distance);
+        var distance = Vector3.Distance(target.position, Animator.transform.position);
+        Animator.SetFloat("distance", distance);
     }
 }

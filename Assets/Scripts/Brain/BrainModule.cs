@@ -5,5 +5,12 @@
  */
 public abstract class BrainModule : ScriptableObject
 {
-    public abstract void UpdateAnimator(Animator animator);
+    protected Animator Animator { get; private set; }
+
+    public virtual void Create(Animator animator)
+    {
+        Animator = animator;
+    }
+    
+    public abstract void UpdateAnimator();
 }

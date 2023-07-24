@@ -13,11 +13,6 @@ public class Walk : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
-    {
-        transform.right = direction;
-    }
-
     private void FixedUpdate()
     {
         rigidbody.velocity = direction * speed;
