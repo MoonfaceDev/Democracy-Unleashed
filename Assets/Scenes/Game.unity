@@ -396,6 +396,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2004705246}
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -455,10 +463,14 @@ PrefabInstance:
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2004705244}
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: followMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: reverseAfterCycle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -788,6 +800,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2004705246}
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -843,7 +863,7 @@ PrefabInstance:
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2004705244}
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: followMode
       value: 1
