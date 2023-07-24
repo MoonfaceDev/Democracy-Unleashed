@@ -396,6 +396,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2004705246}
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -440,6 +448,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9042636698484821833, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     - target: {fileID: 9042636698484821834, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_Radius
       value: 2
@@ -455,10 +467,14 @@ PrefabInstance:
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2004705244}
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: followMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: reverseAfterCycle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -681,7 +697,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6895cf92d8661249ad8f521df6f4052, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -724,7 +740,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.72, y: 1.656}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -779,7 +795,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &9042636698821275335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,6 +804,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2004705246}
+    - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -832,6 +856,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9042636698484821833, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     - target: {fileID: 9042636698484821835, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_Name
       value: policeman
@@ -843,7 +871,7 @@ PrefabInstance:
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2004705244}
+      objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: followMode
       value: 1
