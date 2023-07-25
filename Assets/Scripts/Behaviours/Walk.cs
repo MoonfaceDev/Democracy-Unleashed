@@ -15,6 +15,6 @@ public class Walk : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.AddForce(direction * speed);
+        rigidbody.velocity = direction * speed;
     }
 }
