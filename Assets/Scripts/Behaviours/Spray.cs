@@ -17,7 +17,7 @@ public class Spray : MonoBehaviour
         var distance = target.position - transform.position;
         if (canShoot && distance.magnitude < range)
         {
-            Shoot(target.transform);
+            Shoot();
         }
     }
 
@@ -28,12 +28,24 @@ public class Spray : MonoBehaviour
         canShoot = true;
     } 
 
-    private void Shoot(Transform hit)
+    private IEnumerator KnockbackDelay()
     {
-        var direction = (hit.position - transform.position).normalized;
+        yield return new WaitForSeconds(0.2f);
+        KnockBack();
+    }
+
+    private void KnockBack()
+    {
+        target.GetComponent<Knockback>().Apply(hitForce * transform.right);
+    }
+
+    private void Shoot()
+    {
+        var direction = (target.transform.position - transform.position).normalized;
         transform.right = direction;
-        target.GetComponent<Knockback>().Apply(hitForce * direction);
-        StartCoroutine(Cooldown());
+
         onShoot?.Invoke();
+        StartCoroutine(KnockbackDelay());
+        StartCoroutine(Cooldown());
     }
 }
