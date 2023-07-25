@@ -8,6 +8,6 @@ public class VoiceBar : MonoBehaviour
     private void Update()
     {
         placeholder.transform.localScale =
-            new Vector2(megaphone.voice / Megaphone.MaxVoice, placeholder.transform.localScale.y);
+            new Vector2(megaphone.voice / megaphone.maxVoice, placeholder.transform.localScale.y);
     }
 }

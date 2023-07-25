@@ -13,40 +13,43 @@ public class Megaphone : MonoBehaviour
         public int boost;
     }
 
+    public float maxVoice = 100;
+    public float voiceThreshold = 50;
+    public float screamVoiceCost = 15;
+    public float voiceRegenerationRate = 10;
+
     public UnityEvent onScream;
     public Collider2D megaphoneRange;
     public List<MoraleBoostEntry> moraleBoostsEntries;
 
-    [HideInInspector] public float voice = MaxVoice;
-
-    public const float MaxVoice = 100;
-    private const float VoiceThreshold = 50;
-    private const float ScreamVoiceCost = 15;
-    private const float VoiceRegenerationRate = 10;
+    [HideInInspector] public float voice;
 
     private Morale morale;
-    private bool regenerating;
+    private bool isCooldown;
 
     private void Awake()
     {
         morale = GetComponent<Morale>();
+        voice = maxVoice;
     }
 
     public void Scream()
     {
-        switch (voice)
+        if (isCooldown)
         {
-            case < VoiceThreshold when regenerating:
-                return;
-            case < ScreamVoiceCost:
-                voice = 0;
-                regenerating = true;
-                return;
+            return;
         }
 
-        onScream.Invoke();
+        if (voice < screamVoiceCost)
+        {
+            voice = 0;
+            isCooldown = true;
+            return;
+        }
+
+        voice -= screamVoiceCost;
         BoostMorale();
-        voice -= ScreamVoiceCost;
+        onScream.Invoke();
     }
 
     private void BoostMorale()
@@ -63,11 +66,11 @@ public class Megaphone : MonoBehaviour
 
     private void Update()
     {
-        voice = Mathf.Min(voice + Time.deltaTime * VoiceRegenerationRate, MaxVoice);
+        voice = Mathf.Min(voice + Time.deltaTime * voiceRegenerationRate, maxVoice);
 
-        if (regenerating)
+        if (isCooldown && voice > voiceThreshold)
         {
-            regenerating = voice < VoiceThreshold;
+            isCooldown = false;
         }
     }
 }
