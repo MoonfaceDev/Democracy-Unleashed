@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +69,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,10 +109,10 @@ TextureImporter:
       name: PlayerStatus_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 27
-        width: 80
-        height: 10
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,10 +130,10 @@ TextureImporter:
       name: PlayerStatus_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 29
-        width: 36
-        height: 6
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: PlayerStatus_2
       rect:
         serializedVersion: 2
-        x: 206
-        y: 29
-        width: 36
-        height: 6
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: PlayerStatus_3
       rect:
         serializedVersion: 2
-        x: 268
-        y: 27
-        width: 40
-        height: 10
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,6 +185,27 @@ TextureImporter:
       bones: []
       spriteID: 82062ed0bc1357149a4f24770dfad144
       internalID: 1721225126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerStatus_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef47db274defa4d9de45f6b1730e6a
+      internalID: -2128500349
       vertices: []
       indices: 
       edges: []
@@ -203,6 +224,7 @@ TextureImporter:
       PlayerStatus_0: -542642373
       PlayerStatus_2: 1296594715
       PlayerStatus_1: -1955056173
+      PlayerStatus_4: -2128500349
       PlayerStatus_3: 1721225126
   spritePackingTag: 
   pSDRemoveMatte: 0
