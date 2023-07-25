@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Megaphone
+  - Policeman
+  - WaterCannon
   layers:
   - Default
   - TransparentFX
@@ -50,4 +52,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1389877755
+    locked: 0
+  - name: Canvas
+    uniqueID: 4162776325
     locked: 0
