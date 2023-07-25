@@ -5,13 +5,27 @@ using System.Linq;
 
 public class Morale : MonoBehaviour
 {
-    public int points;
+    //each milestone gives the player new protester
+    public int[] mileStones;
+    private int moraleLevel;
+
+    public float points;
+    public float MoraleDecayPace;
+
+    public GameObject moraleBar;
 
     private List<MoraleAffector> affectors;
 
     private void Awake()
     {
         affectors = new List<MoraleAffector>();
+        moraleLevel = 0;
+    }
+
+    private void Update()
+    {
+        points -= Time.deltaTime * MoraleDecayPace;
+        moraleBar.transform.localScale = new Vector2(points / mileStones[moraleLevel], moraleBar.transform.localScale.y);
     }
 
     public void AddAffector(MoraleAffector affector)
@@ -51,10 +65,23 @@ public class Morale : MonoBehaviour
         foreach (int point in pointList)
             multiplicationResult *= point;
 
-        points += multiplicationResult;
+        UpdateMorale(multiplicationResult);
 
         print("current affectors count: " + affectors.Count);
 
         affectors.Clear();
+    }
+
+    public void UpdateMorale(int screamScore)
+    {
+        points += screamScore;
+        
+        if (points > mileStones[moraleLevel])
+        {
+            //TODO: gather new protester
+            //TODO: play protesting sound (whistle)
+            points = 0;
+            moraleLevel++;
+        }
     }
 }

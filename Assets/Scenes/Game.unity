@@ -5910,7 +5910,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32ed0e580bc83e4495ab4bc0057729e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mileStones: 140000003c00000064000000
   points: 0
+  MoraleDecayPace: 3
+  moraleBar: {fileID: 0}
 --- !u!1001 &7465175918208317324
 PrefabInstance:
   m_ObjectHideFlags: 0
