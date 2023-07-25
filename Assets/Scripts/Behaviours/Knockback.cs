@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Walk : MonoBehaviour
+public class Knockback : MonoBehaviour
 {
-    public float speed;
-    [HideInInspector] public Vector2 direction;
-
     private new Rigidbody2D rigidbody;
 
     private void Awake()
@@ -13,8 +10,8 @@ public class Walk : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    public void Apply(Vector2 force)
     {
-        rigidbody.AddForce(direction * speed);
+        rigidbody.AddForce(force, ForceMode2D.Impulse);
     }
 }
