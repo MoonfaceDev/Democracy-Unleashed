@@ -5464,6 +5464,8 @@ GameObject:
   - component: {fileID: 2004705249}
   - component: {fileID: 2004705248}
   - component: {fileID: 2004705251}
+  - component: {fileID: 2004705253}
+  - component: {fileID: 2004705252}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5590,6 +5592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   direction: {x: 0, y: 0}
+  lookDirection: 0
 --- !u!50 &2004705250
 Rigidbody2D:
   serializedVersion: 4
@@ -5624,6 +5627,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkCooldownDuration: 0.5
+--- !u!95 &2004705252
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004705244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3eb7df66ce667744abdc37269905bb77, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2004705253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004705244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26363335523c4d1cb476d16d9e90c687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainAnimator: {fileID: 2004705252}
+  modules:
+  - {fileID: 11400000, guid: f247322041ed29642a50645b223e35a1, type: 2}
 --- !u!1 &2011155954
 GameObject:
   m_ObjectHideFlags: 0
