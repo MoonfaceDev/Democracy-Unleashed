@@ -1,89 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
-using System.Linq;
 
 public class Morale : MonoBehaviour
 {
     //each milestone gives the player new protester
-    public int[] mileStones;
+    public int[] milestones;
+    public float moraleDecay;
+
+    [HideInInspector] public float points;
+
     private int moraleLevel;
-
-    public float points;
-    public float MoraleDecayPace;
-
-    public Scrollbar moraleBar;
-
-    private List<MoraleAffector> affectors;
-
-    private void Awake()
-    {
-        affectors = new List<MoraleAffector>();
-        moraleLevel = 0;
-    }
 
     private void Update()
     {
-        points = Mathf.Max(points - Time.deltaTime * MoraleDecayPace, 0);
-        moraleBar.size = points / mileStones[moraleLevel];
+        points = Mathf.Max(points - Time.deltaTime * moraleDecay, 0);
     }
 
-    public void AddAffector(MoraleAffector affector)
+    public void BoostMorale(int boost)
     {
-        affectors.Add(affector);
-    }
+        points += boost;
 
-    public void RemoveAffector(MoraleAffector affector)
-    {
-        affectors.Remove(affector);
-    }
-
-    private int GetAffectorPoints(MoraleAffector affector)
-    {
-        switch (affector.affectorType)
+        if (points > milestones[moraleLevel])
         {
-            case AffectorType.policeman:
-                return 2;
-
-            case AffectorType.cavalary:
-                return 3;
-
-            case AffectorType.waterCannon:
-                return 7;
-
-            default: return 0;
+            LevelUp();
         }
     }
 
-    public void Scream()
+    private void LevelUp()
     {
-        var pointList = affectors.Select(affector => GetAffectorPoints(affector));
-
-        //multiplying all points together
-        int multiplicationResult = 1;
-
-        foreach (int point in pointList)
-            multiplicationResult *= point;
-
-        UpdateMorale(multiplicationResult);
-
-        print("current affectors count: " + affectors.Count);
-
-        affectors.Clear();
+        points = 0;
+        moraleLevel++;
+        //TODO: gather new protester
+        //TODO: play protesting sound (whistle)
     }
 
-    public void UpdateMorale(int screamScore)
-    {
-        points += screamScore;
-
-        if (points > mileStones[moraleLevel])
-        {
-            //TODO: gather new protester
-            //TODO: play protesting sound (whistle)
-            print("spawn protestor");
-            points = 0;
-            moraleLevel++;
-        }
-    }
+    public float ProgressToNextMilestone => points / milestones[moraleLevel];
 }

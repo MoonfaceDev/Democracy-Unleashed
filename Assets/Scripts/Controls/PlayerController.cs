@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Walk))]
-[RequireComponent(typeof(MegaPhone))]
+[RequireComponent(typeof(Megaphone))]
 public class PlayerController : MonoBehaviour
 {
     private Walk walk;
-    private MegaPhone megaphone;
+    private Megaphone megaphone;
 
     private void Awake()
     {
         walk = GetComponent<Walk>();
-        megaphone = GetComponent<MegaPhone>();
+        megaphone = GetComponent<Megaphone>();
     }
 
     private void Update()
