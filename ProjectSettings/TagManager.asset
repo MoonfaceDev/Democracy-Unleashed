@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Megaphone
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 3234196339
+    locked: 0
+  - name: character
+    uniqueID: 804255067
+    locked: 0
+  - name: UI
+    uniqueID: 1389877755
     locked: 0

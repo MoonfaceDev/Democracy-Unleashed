@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2928639828050366153}
   m_Layer: 0
   m_Name: policeman
-  m_TagString: Untagged
+  m_TagString: Policeman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
