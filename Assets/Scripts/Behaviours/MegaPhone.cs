@@ -7,6 +7,7 @@ public class MegaPhone : MonoBehaviour
 {
     public UnityEvent events;
     public ParticleSystem ps;
+    public Morale moraleSystem;
     public GameObject staminaBar;
 
     private float voiceStamina = 100, voiceThreshold = 50, screamStaminaCost = 15, voiceRegenerationPace = 10;
@@ -32,6 +33,8 @@ public class MegaPhone : MonoBehaviour
             return;
         }
 
+        events.Invoke();
+        moraleSystem.Scream();
         ps.Emit(100);
         voice -= screamStaminaCost;
     }

@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 420755688}
   m_Layer: 0
   m_Name: megaPhone
-  m_TagString: Untagged
+  m_TagString: MegaPhone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5428,6 +5428,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+--- !u!1 &752793072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9042636698484821835, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+  m_PrefabInstance: {fileID: 9042636698821275335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &752793082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752793072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35a8bdc9d610bc46b3c622d34af9afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectorType: 0
+--- !u!1 &1208468459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9042636698484821835, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+  m_PrefabInstance: {fileID: 724900756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1208468469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208468459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35a8bdc9d610bc46b3c622d34af9afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectorType: 0
 --- !u!1 &1592944301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5683,6 +5719,7 @@ GameObject:
   - component: {fileID: 2004705249}
   - component: {fileID: 2004705248}
   - component: {fileID: 2004705251}
+  - component: {fileID: 2004705252}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5859,7 +5896,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   ps: {fileID: 420755687}
+  moraleSystem: {fileID: 2004705252}
   staminaBar: {fileID: 353064324}
+--- !u!114 &2004705252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004705244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32ed0e580bc83e4495ab4bc0057729e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
 --- !u!1001 &7465175918208317324
 PrefabInstance:
   m_ObjectHideFlags: 0
