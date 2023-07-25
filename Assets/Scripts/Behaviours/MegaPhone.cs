@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MegaPhone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnityEvent events;
+    public ParticleSystem ps;
 
-    // Update is called once per frame
-    void Update()
+    public void Scream()
     {
-        
+        ps.Emit(100);
     }
 }
