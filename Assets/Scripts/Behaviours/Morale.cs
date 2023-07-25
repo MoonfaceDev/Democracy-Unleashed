@@ -1,17 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using System.Linq;
 
 public class Morale : MonoBehaviour
 {
-    public int points;
+    //each milestone gives the player new protester
+    public int[] mileStones;
+    private int moraleLevel;
+
+    public float points;
+    public float MoraleDecayPace;
+
+    public Scrollbar moraleBar;
 
     private List<MoraleAffector> affectors;
 
     private void Awake()
     {
         affectors = new List<MoraleAffector>();
+        moraleLevel = 0;
+    }
+
+    private void Update()
+    {
+        points = Mathf.Max(points - Time.deltaTime * MoraleDecayPace, 0);
+        moraleBar.size = points / mileStones[moraleLevel];
     }
 
     public void AddAffector(MoraleAffector affector)
@@ -51,10 +66,24 @@ public class Morale : MonoBehaviour
         foreach (int point in pointList)
             multiplicationResult *= point;
 
-        points += multiplicationResult;
+        UpdateMorale(multiplicationResult);
 
         print("current affectors count: " + affectors.Count);
 
         affectors.Clear();
+    }
+
+    public void UpdateMorale(int screamScore)
+    {
+        points += screamScore;
+
+        if (points > mileStones[moraleLevel])
+        {
+            //TODO: gather new protester
+            //TODO: play protesting sound (whistle)
+            print("spawn protestor");
+            points = 0;
+            moraleLevel++;
+        }
     }
 }

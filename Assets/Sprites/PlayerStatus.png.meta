@@ -109,10 +109,10 @@ TextureImporter:
       name: PlayerStatus_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 12
+        y: 27
+        width: 80
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,10 +130,10 @@ TextureImporter:
       name: PlayerStatus_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 142
+        y: 29
+        width: 36
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: PlayerStatus_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 206
+        y: 29
+        width: 36
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: PlayerStatus_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 268
+        y: 27
+        width: 40
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,27 +185,6 @@ TextureImporter:
       bones: []
       spriteID: 82062ed0bc1357149a4f24770dfad144
       internalID: 1721225126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerStatus_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e017465344d2ba4aa8921738c40dead
-      internalID: -1338483324
       vertices: []
       indices: 
       edges: []
@@ -224,7 +203,6 @@ TextureImporter:
       PlayerStatus_0: -542642373
       PlayerStatus_2: 1296594715
       PlayerStatus_1: -1955056173
-      PlayerStatus_4: -1338483324
       PlayerStatus_3: 1721225126
   spritePackingTag: 
   pSDRemoveMatte: 0
