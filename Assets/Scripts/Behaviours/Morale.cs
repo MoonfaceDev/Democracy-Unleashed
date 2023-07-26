@@ -9,7 +9,7 @@ public class Morale : MonoBehaviour
 
     [HideInInspector] public float points;
 
-    private int moraleLevel;
+    private int currentMilestone;
 
     private PeopleInventory crowd;
 
@@ -25,9 +25,13 @@ public class Morale : MonoBehaviour
 
     public void BoostMorale(int boost)
     {
+        if (currentMilestone >= milestones.Length)
+        {
+            return;
+        }
+        
         points += boost;
-
-        if (points > milestones[moraleLevel])
+        if (points > milestones[currentMilestone])
         {
             LevelUp();
         }
@@ -36,10 +40,11 @@ public class Morale : MonoBehaviour
     private void LevelUp()
     {
         points = 0;
-        moraleLevel++;
-        crowd.crowdSize += moraleLevel;
+        currentMilestone++;
+        crowd.crowdSize += currentMilestone;
         //TODO: play protesting sound (whistle)
     }
 
-    public float ProgressToNextMilestone => points / milestones[moraleLevel];
+    public float ProgressToNextMilestone =>
+        currentMilestone < milestones.Length ? points / milestones[currentMilestone] : 0;
 }
