@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Walk))]
 public class Chase : MonoBehaviour
@@ -15,5 +16,10 @@ public class Chase : MonoBehaviour
     private void FixedUpdate()
     {
         walk.direction = (target.position - transform.position).normalized;
+    }
+
+    private void OnDisable()
+    {
+        walk.direction = Vector2.zero;
     }
 }
