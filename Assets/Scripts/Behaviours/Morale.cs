@@ -11,7 +11,7 @@ public class Morale : MonoBehaviour
 
     private int moraleLevel;
 
-    PeopleInventory crowd;
+    private PeopleInventory crowd;
 
     private void Awake()
     {

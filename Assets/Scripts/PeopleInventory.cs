@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PeopleInventory : MonoBehaviour
@@ -16,10 +16,9 @@ public class PeopleInventory : MonoBehaviour
     //if player unlocked the pilot he will gain another one each milestone
     public void GainLeaders()
     {
-        foreach (Leader leader in leaders)
+        foreach (var leader in leaders.Where(leader => leader.unlocked))
         {
-            if (leader.unlocked)
-                leader.amount++;
+            leader.amount++;
         }
     }
 
@@ -29,22 +28,22 @@ public class PeopleInventory : MonoBehaviour
     }
 
     //returns if the player have the leaders required for a block
-    public bool UseProtesters(List<Leader> RequiredProtesters)
+    public bool UseProtesters(List<Leader> requiredProtesters)
     {
         //check if player have the leaders required
-        foreach (Leader requiredLeader in RequiredProtesters)
+        foreach (var requiredLeader in requiredProtesters)
         {
-            Leader myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
+            var myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
 
             if (!myLeader.unlocked || myLeader.amount < requiredLeader.amount)
                 return false;
         }
 
         //player have the leaders required
-        //update amounts acordingly
-        foreach (Leader requiredLeader in RequiredProtesters)
+        //update amounts accordingly
+        foreach (var requiredLeader in requiredProtesters)
         {
-            Leader myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
+            var myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
             myLeader.amount -= requiredLeader.amount;
         }
 

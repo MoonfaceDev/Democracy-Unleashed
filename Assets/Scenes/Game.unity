@@ -5609,7 +5609,7 @@ PrefabInstance:
       objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11415,7 +11415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1899780740}
   text: {fileID: 2019430386}
-  timeBetweenChars: 0.06
+  characterRate: 0.06
+  continueFlickerRate: 0.3
 --- !u!114 &1985428774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11428,10 +11429,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 1985428773}
   messages:
   - Hi I'm Shikma
   - De-mo-cra-cy!
+  onConversationEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1985428775
 MonoBehaviour:
   m_ObjectHideFlags: 0
