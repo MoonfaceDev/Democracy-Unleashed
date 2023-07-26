@@ -24,4 +24,9 @@ public class TakeDistance : MonoBehaviour
             .Aggregate(Vector3.zero, (average, position) => average + position) / overlappingColliders.Count;
         walk.direction = (transform.position - centerOfGravity).normalized;
     }
+    
+    private void OnDisable()
+    {
+        walk.direction = Vector2.zero;
+    }
 }

@@ -56,5 +56,6 @@ public class Trail : MonoBehaviour
     private void OnDisable()
     {
         currentPointIndex = GetClosestPointIndex();
+        walk.direction = Vector2.zero;
     }
 }
