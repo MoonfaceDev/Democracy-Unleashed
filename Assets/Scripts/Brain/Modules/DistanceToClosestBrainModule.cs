@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Brain Modules/Distance To Closest")]
-public class TooCloseBrainModule : BrainModule
+public class DistanceToClosestBrainModule : BrainModule
 {
     private Transform target;
 
