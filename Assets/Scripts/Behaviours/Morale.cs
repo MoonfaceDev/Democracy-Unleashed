@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(PeopleInventory))]
 public class Morale : MonoBehaviour
 {
     //each milestone gives the player new protester
@@ -9,6 +10,13 @@ public class Morale : MonoBehaviour
     [HideInInspector] public float points;
 
     private int moraleLevel;
+
+    PeopleInventory crowd;
+
+    private void Awake()
+    {
+        crowd = GetComponent<PeopleInventory>();
+    }
 
     private void Update()
     {
@@ -29,7 +37,7 @@ public class Morale : MonoBehaviour
     {
         points = 0;
         moraleLevel++;
-        //TODO: gather new protester
+        crowd.crowdSize += moraleLevel;
         //TODO: play protesting sound (whistle)
     }
 
