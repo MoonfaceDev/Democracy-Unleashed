@@ -1,32 +1,43 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
-public class Dialog : MonoBehaviour
+public class Dialog : SingletonBehaviour<Dialog>
 {
     public GameObject dialogPanel;
     public TextMeshProUGUI text;
-    public float timeBetweenChars;
+    public float characterRate;
+    public float continueFlickerRate;
 
-    private const string ContinueStr = " >>";
+    private const string ContinueSymbol = " >>";
 
     private Queue<string> messageQueue;
+    [CanBeNull] private Action onCurrentConversationEnd;
     private Coroutine messageCoroutine;
 
-    public Callback endConversationCallback;
-
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         messageQueue = new Queue<string>();
     }
 
-    public void ShowMessages(IEnumerable<string> messages)
+    public void StartConversation(IEnumerable<string> messages, Action onConversationEnd = null)
     {
+        if (messageQueue.Count != 0)
+        {
+            return; // Cannot add messages mid-conversation
+        }
+
         foreach (var message in messages)
         {
             messageQueue.Enqueue(message);
         }
+
+        onCurrentConversationEnd = onConversationEnd;
+        dialogPanel.SetActive(true);
         ShowNextMessage();
     }
 
@@ -45,49 +56,33 @@ public class Dialog : MonoBehaviour
             StopCoroutine(messageCoroutine);
         }
 
-        messageCoroutine = StartCoroutine(ShowMessageCoroutine());
-    }
-
-    private IEnumerator ShowMessageCoroutine()
-    {
         if (messageQueue.Count == 0)
         {
             dialogPanel.SetActive(false);
-            endConversationCallback?.Invoke();
-            yield break;
+            onCurrentConversationEnd?.Invoke();
+            return;
         }
-        
-        dialogPanel.SetActive(true);
 
-        text.text = messageQueue.Dequeue();
-        text.ForceMeshUpdate();
-        
-        var totalVisibleCharacters = text.textInfo.characterCount;
-        var counter = 0;
+        var message = messageQueue.Dequeue();
+        messageCoroutine = StartCoroutine(ShowMessageCoroutine(message));
+    }
+
+    private IEnumerator ShowMessageCoroutine(string message)
+    {
+        text.text = "";
+
+        foreach (var character in message)
+        {
+            yield return new WaitForSeconds(characterRate);
+            text.text += character;
+        }
 
         while (true)
         {
-            var visibleCount = counter % (totalVisibleCharacters + 1);
-            text.maxVisibleCharacters = visibleCount;
-
-            if (visibleCount >= totalVisibleCharacters)
-            {
-                text.maxVisibleCharacters = visibleCount + 3;
-
-                var textTemp = text.text;
-                var textContinue = text.text + ContinueStr;
-
-                while (true)
-                {
-                    yield return new WaitForSeconds(0.3f);
-                    text.text = textContinue;
-                    yield return new WaitForSeconds(0.3f);
-                    text.text = textTemp;
-                }
-            }
-
-            counter += 1;
-            yield return new WaitForSeconds(timeBetweenChars);
+            yield return new WaitForSeconds(continueFlickerRate);
+            text.text = message;
+            yield return new WaitForSeconds(continueFlickerRate);
+            text.text = message + ContinueSymbol;
         }
     }
 }

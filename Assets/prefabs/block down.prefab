@@ -95,9 +95,11 @@ GameObject:
   - component: {fileID: 3941644082071692280}
   - component: {fileID: 3941644082071692282}
   - component: {fileID: 3941644082071692283}
+  - component: {fileID: 3941644082071692284}
+  - component: {fileID: 1195244580169365416}
   - component: {fileID: 3941644082071692285}
   - component: {fileID: 3941644082071692287}
-  - component: {fileID: 3941644082071692284}
+  - component: {fileID: 308858433297934106}
   m_Layer: 0
   m_Name: block down
   m_TagString: Untagged
@@ -164,39 +166,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.0574484, y: 3.296968}
   m_EdgeRadius: 0
---- !u!114 &3941644082071692285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3941644082071692281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 0}
-  messages:
-  - 'Policeman: STOP you are not allowed to pass'
-  - 'Shikma: I need at least 3 protesters to pass...'
---- !u!114 &3941644082071692287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3941644082071692281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 0}
-  messages:
-  - 'Shikma: Haaaa!! Busha! Busha! Busha!'
-  - 'Policeman: OH NO RETREAT :0'
-  - '*NEW SKILL* press b-s-b-s to do megaphone combo!'
 --- !u!114 &3941644082071692284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,12 +178,128 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0de750230c4ab64b9a0ca4fa82d2716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogEvent: {fileID: 3941644082071692285}
+  onBlockedInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1195244580169365416}
+        m_TargetAssemblyTypeName: CooldownEvent, Assembly-CSharp
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRetreatInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3941644082071692287}
+        m_TargetAssemblyTypeName: DialogEvent, Assembly-CSharp
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  requiredCrowd: 3
+--- !u!114 &1195244580169365416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941644082071692281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b67b5f6d150b1c498de0ca1020e674c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3941644082071692285}
+        m_TargetAssemblyTypeName: DialogEvent, Assembly-CSharp
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   cooldown: 10
+--- !u!114 &3941644082071692285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941644082071692281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - 'Policeman: STOP you are not allowed to pass'
+  - 'Shikma: I need at least 3 protesters to pass...'
+  onConversationEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3941644082071692287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941644082071692281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - 'Shikma: Haaaa!! Busha! Busha! Busha!'
+  - 'Policeman: OH NO RETREAT :0'
+  - '*NEW SKILL* press b-s-b-s to do megaphone combo!'
+  onConversationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 308858433297934106}
+        m_TargetAssemblyTypeName: PoliceBarrierRetreat, Assembly-CSharp
+        m_MethodName: Retreat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &308858433297934106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941644082071692281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b951444009478ebc47f8a414d2104c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   police: {fileID: 3941644082871810295}
   blockade: {fileID: 3941644082099416622}
-  retreatDialog: {fileID: 3941644082071692287}
-  requiredCrowd: 3
 --- !u!1 &3941644082099416622
 GameObject:
   m_ObjectHideFlags: 0

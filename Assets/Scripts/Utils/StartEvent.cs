@@ -7,6 +7,6 @@ public class StartEvent : MonoBehaviour
 
     private void Start()
     {
-        @event?.Invoke();
+        @event.Invoke();
     }
 }

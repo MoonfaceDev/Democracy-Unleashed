@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-[System.Serializable]
+[Serializable]
 public class Leader
 {
     public LeaderType leaderType;
@@ -10,4 +8,12 @@ public class Leader
     public int amount;
 }
 
-public enum LeaderType { pilot, student, maid, lawyer, technician, doctor}
+public enum LeaderType
+{
+    Pilot,
+    Student,
+    Maid,
+    Lawyer,
+    Technician,
+    Doctor
+}
