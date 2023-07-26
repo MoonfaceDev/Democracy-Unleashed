@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &322190148636038443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8805913068590028786}
+  - component: {fileID: 8973994769692434192}
+  m_Layer: 0
+  m_Name: Close Range
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8805913068590028786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322190148636038443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9042636698484821832}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8973994769692434192
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322190148636038443}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!1 &9042636698484821835
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,12 +61,12 @@ GameObject:
   - component: {fileID: 9042636698484821846}
   - component: {fileID: 5312174802203675037}
   - component: {fileID: 2741715530830553834}
-  - component: {fileID: 9042636698484821847}
   - component: {fileID: 8173677160984903190}
-  - component: {fileID: 4694519916164602943}
+  - component: {fileID: 3536948177200621852}
+  - component: {fileID: 5948538754272069387}
   - component: {fileID: 2928639828050366153}
   m_Layer: 0
-  m_Name: Policeman
+  m_Name: Protester
   m_TagString: Policeman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +83,8 @@ Transform:
   m_LocalPosition: {x: -11.44, y: -1.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8805913068590028786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,7 +130,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.042452812, g: 0.07445686, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.83452904, b: 0.043137252, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -142,20 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   direction: {x: 0, y: 0}
---- !u!114 &9042636698484821847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9042636698484821835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0485990c6d6e6b240a5d5a7a1a074ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trail: {fileID: 0}
-  reverseAfterCycle: 0
+  lookDirection: 0
 --- !u!114 &8173677160984903190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +205,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
---- !u!95 &4694519916164602943
+--- !u!114 &3536948177200621852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042636698484821835}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea14ef5e267489c913a28d392f6368d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeRange: {fileID: 8973994769692434192}
+--- !u!95 &5948538754272069387
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -179,7 +228,7 @@ Animator:
   m_GameObject: {fileID: 9042636698484821835}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dbf06c27790d1e34a9f10c57ab1929b0, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee165663d38025b4aba8d1cea6124121, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -201,6 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26363335523c4d1cb476d16d9e90c687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainAnimator: {fileID: 4694519916164602943}
+  brainAnimator: {fileID: 5948538754272069387}
   modules:
-  - {fileID: 11400000, guid: 007f11d573f480d498dd2f90ae1e7a54, type: 2}
+  - {fileID: 11400000, guid: eb8068c3e12f282478931e72f2f10124, type: 2}
