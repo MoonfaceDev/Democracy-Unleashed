@@ -5140,13 +5140,13 @@ LineRenderer:
   - {x: 3.6446319, y: -2.674755, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.027305603
-        value: 0.15079498
+        time: 0.056111038
+        value: 0.67040336
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5204,7 +5204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312688794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.22, y: 0, z: 0}
+  m_LocalPosition: {x: -6.87, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5526,7 +5526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821835, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: trail
@@ -11227,7 +11227,7 @@ LineRenderer:
   - {x: -16.35401, y: 3.6876857, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -12072,7 +12072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821835, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: trail
