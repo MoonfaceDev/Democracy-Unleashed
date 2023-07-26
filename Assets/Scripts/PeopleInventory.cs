@@ -5,9 +5,10 @@ using UnityEngine;
 public class PeopleInventory : MonoBehaviour
 {
     public List<Leader> leaders;
+    public int crowdSize;
 
     //if player unlocked the pilot he will gain another one each milestone
-    public void GainProtesters()
+    public void GainLeaders()
     {
         foreach (Leader leader in leaders)
         {
