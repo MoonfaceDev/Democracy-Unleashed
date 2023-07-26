@@ -9,31 +9,34 @@ public class TriggerDialog : MonoBehaviour
 
     //dialog will not be activated multiple times
     public float cooldown;
-    protected bool enabled;
+    protected bool readyForConversation;
     protected float timer;
 
-    private void Awake()
+    protected virtual void Awake()
     {
-        enabled = true;
+        readyForConversation = true;
         timer = cooldown;
+        print("awake");
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        if (!enabled)
+        if (!readyForConversation)
             timer -= Time.deltaTime;
         if (timer < 0)
-            enabled = true;
+        {
+            readyForConversation = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (enabled)
+            if (readyForConversation)
             {
                 dialogEvent.Invoke();
-                enabled = false;
+                readyForConversation = false;
                 timer = cooldown;
             }
         }

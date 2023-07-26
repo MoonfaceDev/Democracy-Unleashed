@@ -14,6 +14,8 @@ public class Dialog : MonoBehaviour
     private Queue<string> messageQueue;
     private Coroutine messageCoroutine;
 
+    public Callback endConversationCallback;
+
     private void Awake()
     {
         messageQueue = new Queue<string>();
@@ -51,6 +53,7 @@ public class Dialog : MonoBehaviour
         if (messageQueue.Count == 0)
         {
             dialogPanel.SetActive(false);
+            endConversationCallback?.Invoke();
             yield break;
         }
         
