@@ -5858,8 +5858,9 @@ GameObject:
   - component: {fileID: 1396012425}
   - component: {fileID: 1396012427}
   - component: {fileID: 1396012426}
+  - component: {fileID: 1396012428}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: crowd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5982,6 +5983,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396012424}
   m_CullTransparentMesh: 1
+--- !u!114 &1396012428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396012424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f0e738ef1623409ddfdd3113f3686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1396012426}
 --- !u!1001 &1494401920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6038,6 +6052,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: block down
       objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 1985428773}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
@@ -11678,6 +11700,7 @@ MonoBehaviour:
     unlocked: 0
     amount: 0
   crowdSize: 0
+  crowdUI: {fileID: 1396012428}
 --- !u!1 &2011155954
 GameObject:
   m_ObjectHideFlags: 0

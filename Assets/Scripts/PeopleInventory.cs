@@ -6,6 +6,12 @@ public class PeopleInventory : MonoBehaviour
 {
     public List<Leader> leaders;
     public int crowdSize;
+    public CrowdCounter crowdUI;
+
+    private void Update()
+    {
+        crowdUI.SetScore(crowdSize);
+    }
 
     //if player unlocked the pilot he will gain another one each milestone
     public void GainLeaders()
