@@ -11194,6 +11194,7 @@ GameObject:
   - component: {fileID: 2004705252}
   - component: {fileID: 2004705254}
   - component: {fileID: 2004705255}
+  - component: {fileID: 2004705256}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -11446,6 +11447,37 @@ MonoBehaviour:
   milestones: 140000003200000046000000
   moraleDecay: 1
   points: 0
+--- !u!114 &2004705256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004705244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86f95466f0517b42b1dc152b807da33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leaders:
+  - leaderType: 0
+    unlocked: 0
+    amount: 0
+  - leaderType: 1
+    unlocked: 0
+    amount: 0
+  - leaderType: 2
+    unlocked: 0
+    amount: 0
+  - leaderType: 3
+    unlocked: 0
+    amount: 0
+  - leaderType: 4
+    unlocked: 0
+    amount: 0
+  - leaderType: 5
+    unlocked: 0
+    amount: 0
 --- !u!1 &2011155954
 GameObject:
   m_ObjectHideFlags: 0
