@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PeopleInventory : MonoBehaviour
 {
-    public List<Leader> leaders;
+    public List<LeaderGroup> leaders;
     public int crowdSize;
     public CrowdCounter crowdUI;
 
@@ -28,7 +28,7 @@ public class PeopleInventory : MonoBehaviour
     }
 
     //returns if the player have the leaders required for a block
-    public bool UseProtesters(List<Leader> requiredProtesters)
+    public bool UseProtesters(List<LeaderGroup> requiredProtesters)
     {
         //check if player have the leaders required
         foreach (var requiredLeader in requiredProtesters)

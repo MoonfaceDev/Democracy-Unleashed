@@ -6115,6 +6115,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: block down
       objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: isMajorBarrier
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredLeaders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredLeaders.Array.data[0].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredLeaders.Array.data[1].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredLeaders.Array.data[1].leaderType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 

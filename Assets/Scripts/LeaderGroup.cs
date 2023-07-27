@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public class Leader
+public class LeaderGroup
 {
     public LeaderType leaderType;
     public bool unlocked;
