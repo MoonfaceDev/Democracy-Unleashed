@@ -1,52 +1,58 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public class InsufficientProtestersException : Exception
+{
+}
+
 public class PeopleInventory : MonoBehaviour
 {
-    public List<LeaderGroup> leaders;
-    public int crowdSize;
-    public CrowdCounter crowdUI;
+    private Dictionary<ProtesterGroup.Type, ProtesterGroup> protesterGroups;
+    [HideInInspector] public int crowdSize;
 
-    private void Update()
+    private void Awake()
     {
-        crowdUI.SetScore(crowdSize);
+        protesterGroups = Enum.GetValues(typeof(ProtesterGroup.Type))
+            .Cast<ProtesterGroup.Type>()
+            .Select(type => new ProtesterGroup(type))
+            .ToDictionary(keySelector: group => group.type);
     }
 
     //if player unlocked the pilot he will gain another one each milestone
-    public void GainLeaders()
+    public void GainProtesters()
     {
-        foreach (var leader in leaders.Where(leader => leader.unlocked))
+        foreach (var group in protesterGroups.Values.Where(group => group.unlocked))
         {
-            leader.amount++;
+            group.size++;
         }
     }
 
-    public void UnlockLeader(LeaderType leaderType)
+    public void UnlockGroup(ProtesterGroup.Type type)
     {
-        leaders.Find(leader => leader.leaderType == leaderType).unlocked = true;
+        protesterGroups[type].unlocked = true;
     }
 
-    //returns if the player have the leaders required for a block
-    public bool UseProtesters(List<LeaderGroup> requiredProtesters)
+    public bool HasRequiredProtesters(IEnumerable<ProtesterRequirement> requiredProtesters)
     {
-        //check if player have the leaders required
-        foreach (var requiredLeader in requiredProtesters)
+        return requiredProtesters.All(requirement =>
         {
-            var myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
+            var group = protesterGroups[requirement.type];
+            return group.unlocked && group.size >= requirement.size;
+        });
+    }
 
-            if (!myLeader.unlocked || myLeader.amount < requiredLeader.amount)
-                return false;
+    public void UseProtesters(List<ProtesterRequirement> requiredProtesters)
+    {
+        if (!HasRequiredProtesters(requiredProtesters))
+        {
+            throw new InsufficientProtestersException();
         }
 
-        //player have the leaders required
-        //update amounts accordingly
-        foreach (var requiredLeader in requiredProtesters)
+        foreach (var requirement in requiredProtesters)
         {
-            var myLeader = leaders.Find(leader => leader.leaderType == requiredLeader.leaderType);
-            myLeader.amount -= requiredLeader.amount;
+            protesterGroups[requirement.type].size -= requirement.size;
         }
-
-        return true;
     }
 }

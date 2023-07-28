@@ -5739,7 +5739,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Protester
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6789763650874395805, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+    - {fileID: 7349953330548320519, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
 --- !u!1 &1056168295
@@ -5893,74 +5895,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1220808947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9042636698484821835, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
-  m_PrefabInstance: {fileID: 946902081}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1220808949 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5948538754272069387, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
-  m_PrefabInstance: {fileID: 946902081}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1220808957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220808947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e170b32426f04846bfb770e5608bb0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - hello im a pilot yey
-  onConversationEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1220808949}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: DialogEnded
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!58 &1220808958
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220808947}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
---- !u!114 &1220808959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220808947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cd03201ae8a1e4c8d8d5a0d0dcdfeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 1220808957}
 --- !u!1 &1372927897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,6 +6145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1396012426}
+  inventory: {fileID: 2004705256}
 --- !u!1001 &1494401920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11918,27 +11853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86f95466f0517b42b1dc152b807da33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leaders:
-  - leaderType: 0
-    unlocked: 0
-    amount: 0
-  - leaderType: 1
-    unlocked: 0
-    amount: 0
-  - leaderType: 2
-    unlocked: 0
-    amount: 0
-  - leaderType: 3
-    unlocked: 0
-    amount: 0
-  - leaderType: 4
-    unlocked: 0
-    amount: 0
-  - leaderType: 5
-    unlocked: 0
-    amount: 0
   crowdSize: 0
-  crowdUI: {fileID: 1396012428}
 --- !u!1 &2011155954
 GameObject:
   m_ObjectHideFlags: 0
