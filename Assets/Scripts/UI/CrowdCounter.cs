@@ -4,9 +4,10 @@ using UnityEngine;
 public class CrowdCounter : MonoBehaviour
 {
     public TextMeshProUGUI text;
+    public PeopleInventory inventory;
 
-    public void SetScore(int score)
+    private void Update()
     {
-        text.text = "crowd: " + score;
+        text.text = "crowd: " + inventory.crowdSize;
     }
 }
