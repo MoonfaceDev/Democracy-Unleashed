@@ -6057,9 +6057,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1389877755
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -10999,8 +10999,8 @@ PrefabInstance:
       value: Protester
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6789763650874395805, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
-    - {fileID: 7349953330548320519, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
 --- !u!1001 &960749953
@@ -13011,7 +13011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.44
+      value: -9.34
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_LocalPosition.y

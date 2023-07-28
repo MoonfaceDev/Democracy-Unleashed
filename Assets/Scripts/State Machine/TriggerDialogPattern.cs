@@ -1,4 +1,4 @@
-public class TriggerDialogPattern : BehaviourPattern<PlayerTrigger>
+public class TriggerDialogPattern : BehaviourPattern<DialogEvent>
 {
 
 }
