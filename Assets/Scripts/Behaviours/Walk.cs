@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public enum LookDirection
 {
@@ -15,6 +16,7 @@ public class Walk : MonoBehaviour
     [HideInInspector] public Vector2 direction;
     [HideInInspector] public LookDirection lookDirection;
 
+    private static readonly LookDirection[] Directions = Enum.GetValues(typeof(LookDirection)) as LookDirection[];
     private new Rigidbody2D rigidbody;
 
     private void Awake()
@@ -33,23 +35,14 @@ public class Walk : MonoBehaviour
 
     private static LookDirection? GetLookDirection(Vector2 walkDirection)
     {
-        switch (walkDirection.x)
+        if (walkDirection == Vector2.zero)
         {
-            case > 0:
-                return LookDirection.Right;
-            case < 0:
-                return LookDirection.Left;
-        }
-        
-        switch (walkDirection.y)
-        {
-            case > 0:
-                return LookDirection.Up;
-            case < 0:
-                return LookDirection.Down;
+            return null;
         }
 
-        return null;
+        var angle = 360-Vector2.SignedAngle(Vector2.left, walkDirection);
+        var directionIndex = Mathf.RoundToInt(angle / 90) % 4;
+        return Directions[directionIndex];
     }
 
     private void FixedUpdate()

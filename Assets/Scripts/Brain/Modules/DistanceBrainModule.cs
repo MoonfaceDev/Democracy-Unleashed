@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Brain Modules/Distance")]
 public class DistanceBrainModule : BrainModule
 {
     public string targetTag;

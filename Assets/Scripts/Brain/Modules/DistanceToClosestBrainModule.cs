@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Brain Modules/Distance To Closest")]
 public class DistanceToClosestBrainModule : BrainModule
 {
     private Transform target;

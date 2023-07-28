@@ -3,7 +3,7 @@
 /**
  * Brain Module is a class, responsible for updating animator parameters in `Run`
  */
-public abstract class BrainModule : ScriptableObject
+public abstract class BrainModule : MonoBehaviour
 {
     protected Animator Animator { get; private set; }
 

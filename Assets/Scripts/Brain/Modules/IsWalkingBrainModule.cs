@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Brain Modules/Is Walking")]
 public class IsWalkingBrainModule : BrainModule
 {
     private Walk walk;
@@ -8,7 +7,7 @@ public class IsWalkingBrainModule : BrainModule
     public override void Create(Animator animator)
     {
         base.Create(animator);
-        walk = animator.GetComponent<Walk>();
+        walk = animator.GetComponentInParent<Walk>();
     }
 
     public override void UpdateAnimator()
