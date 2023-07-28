@@ -7,10 +7,16 @@ public class Spray : MonoBehaviour
     public float range;
     public float shootCooldown;
     public float hitForce;
-    public Transform target;
+    public string targetTag;
     public UnityEvent onShoot;
 
+    private Transform target;
     private bool canShoot = true;
+
+    private void Awake()
+    {
+        target = GameObject.FindWithTag(targetTag).transform;
+    }
 
     private void Update()
     {
@@ -26,15 +32,15 @@ public class Spray : MonoBehaviour
         canShoot = false;
         yield return new WaitForSeconds(shootCooldown);
         canShoot = true;
-    } 
+    }
 
     private IEnumerator KnockbackDelay()
     {
         yield return new WaitForSeconds(0.2f);
-        KnockBack();
+        Knockback();
     }
 
-    private void KnockBack()
+    private void Knockback()
     {
         target.GetComponent<Knockback>().Apply(hitForce * transform.right);
     }
