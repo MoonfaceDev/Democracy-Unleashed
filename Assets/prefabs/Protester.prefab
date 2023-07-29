@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainAnimator: {fileID: 5948538754272069387}
   modules:
-  - {fileID: 414719117665684520}
+  - {fileID: 0}
 --- !u!114 &414719117665684520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,9 +105,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9005096049245059512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643e638d49f945ac94d10c8c64c18483, type: 3}
+  m_Script: {fileID: 11500000, guid: 484457e9f9954e82961e028e06b7f3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTag: Player
 --- !u!1 &9042636698484821835
 GameObject:
   m_ObjectHideFlags: 0
