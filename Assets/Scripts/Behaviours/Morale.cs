@@ -14,9 +14,6 @@ public class Morale : MonoBehaviour
 
     private PeopleInventory inventory;
 
-    //can only combo once in each milestone
-    private bool canCombo;
-
     private void Awake()
     {
         inventory = GetComponent<PeopleInventory>();
