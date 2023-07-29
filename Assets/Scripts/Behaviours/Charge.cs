@@ -35,7 +35,7 @@ public class Charge : MonoBehaviour
     {
         var distanceFromTarget = Vector2.Distance(transform.position, target);
 
-        if (distanceFromTarget < 0.2f)
+        if (distanceFromTarget < 0.5f)
         {
             onTargetArrived.Invoke();
         }
