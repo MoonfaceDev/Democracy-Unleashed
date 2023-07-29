@@ -5866,7 +5866,7 @@ PrefabInstance:
       objectReference: {fileID: 1985428773}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[0]
@@ -5882,7 +5882,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
-      value: '*NEW SKILL* press d-m-c-r-c to megaphone combo'
+      value: '*NEW SKILL* press d-m-c-t to megaphone combo'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[4]
+      value: Finished combo => morale X 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[5]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082354402646, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14449,6 +14457,18 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[3]
+      value: Finished combo => morale X 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[4]
+      value: You can perform one combo for each morale level
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082347229712, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.21
