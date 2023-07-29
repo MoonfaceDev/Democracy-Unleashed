@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -36,6 +37,14 @@ public class PeopleInventory : MonoBehaviour
     public void TakeCrowd(int amount)
     {
         CrowdSize = Mathf.Max(0, CrowdSize - amount);
+        StartCoroutine(Flicker());
+    }
+
+    private IEnumerator Flicker()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public void GainProtester(ProtesterType protesterType)
