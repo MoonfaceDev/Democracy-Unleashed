@@ -10,29 +10,26 @@ public class Combo
     public KeyCode[] sequence;
 
     private int sequenceIndex;
-    [HideInInspector] public bool isActive;
 
     public void Proceed(KeyCode inputKey)
     {
         if (sequence[sequenceIndex] != inputKey)
         {
-            FinishCombo();
+            ResetCombo();
             return;
         }
 
-        isActive = true;
         sequenceIndex++;
 
         if (sequenceIndex == sequence.Length)
         {
-            FinishCombo();
+            ResetCombo();
             onCompleted.Invoke();
         }
     }
 
-    private void FinishCombo()
+    public void ResetCombo()
     {
-        isActive = false;
         sequenceIndex = 0;
     }
 

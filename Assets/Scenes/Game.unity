@@ -15201,8 +15201,13 @@ MonoBehaviour:
     boost: 4
   - tag: WaterCannon
     boost: 7
-  combos: []
+  combos:
+  - onCompleted:
+      _persistentListeners: []
+      Expanded: 0
+    sequence: 62000000730000006200000073000000
   voice: 0
+  canCombo: 0
 --- !u!114 &2004705255
 MonoBehaviour:
   m_ObjectHideFlags: 0
