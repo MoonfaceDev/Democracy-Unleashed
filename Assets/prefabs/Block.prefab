@@ -9,14 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3941644082071692280}
-  - component: {fileID: 3941644082071692282}
+  - component: {fileID: 8897049309189631335}
   - component: {fileID: 3238883589687893049}
   - component: {fileID: 3941644082071692284}
   - component: {fileID: 1195244580169365416}
   - component: {fileID: 3941644082071692285}
   - component: {fileID: 3941644082071692287}
   - component: {fileID: 308858433297934106}
-  - component: {fileID: 7994543103253144516}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -40,8 +39,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &3941644082071692282
-CircleCollider2D:
+--- !u!68 &8897049309189631335
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53,9 +52,15 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3}
-  serializedVersion: 2
-  m_Radius: 1.5
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.4007215, y: -0.2194066}
+  - {x: 1.3545313, y: -0.23095417}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!58 &3238883589687893049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -207,34 +212,6 @@ MonoBehaviour:
   police: {fileID: 3941644082871810295}
   angle: 0
   onRetreat:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7994543103253144516}
-        m_TargetAssemblyTypeName: DelayedEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7994543103253144516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3941644082071692281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1316c278fc3f41e6ac66828552a505df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 1
-  event:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3941644082347229713
