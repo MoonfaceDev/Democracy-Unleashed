@@ -1,43 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
+using System;
 using ExtEvents;
+using UnityEngine;
+using UnityEngine.Serialization;
 
-[System.Serializable]
-public class Combo 
+[Serializable]
+public class Combo
 {
-    public ExtEvent OnCompleted;
+    [FormerlySerializedAs("OnCompleted")] public ExtEvent onCompleted;
     public KeyCode[] sequence;
 
     private int sequenceIndex;
-    [HideInInspector]
-    public bool isActive;
+    [HideInInspector] public bool isActive;
 
     public void Proceed(KeyCode inputKey)
     {
         if (sequence[sequenceIndex] != inputKey)
         {
-            isActive = false;
-            sequenceIndex = 0;
+            FinishCombo();
             return;
         }
 
         isActive = true;
         sequenceIndex++;
 
-        Debug.Log("combo proceed");
-
         if (sequenceIndex == sequence.Length)
         {
-            Debug.Log("finished");
-            isActive = false;
-            sequenceIndex = 0;
-            OnCompleted.Invoke();
+            FinishCombo();
+            onCompleted.Invoke();
         }
     }
 
-    public bool isStartingThisCombo(KeyCode inputKey)
+    private void FinishCombo()
+    {
+        isActive = false;
+        sequenceIndex = 0;
+    }
+
+    public bool IsFirst(KeyCode inputKey)
     {
         return sequence[0] == inputKey;
     }
