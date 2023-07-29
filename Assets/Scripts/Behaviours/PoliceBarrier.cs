@@ -12,26 +12,16 @@ public class PoliceBarrier : PlayerTrigger
         return inventory.crowdSize >= requiredCrowd;
     }
 
-    protected virtual void Block(PeopleInventory inventory)
-    {
-        onBlockedInteraction.Invoke();
-    }
-
-    protected virtual void Retreat(PeopleInventory inventory)
-    {
-        onRetreatInteraction.Invoke();
-    }
-
     protected override void Interact(GameObject player)
     {
         var inventory = player.GetComponent<PeopleInventory>();
         if (HasRequirements(inventory))
         {
-            Retreat(inventory);
+            onRetreatInteraction.Invoke();
         }
         else
         {
-            Block(inventory);
+            onBlockedInteraction.Invoke();
         }
     }
 }
