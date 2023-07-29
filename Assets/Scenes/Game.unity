@@ -5251,6 +5251,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98634836613241168, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_text
+      value: '#5'
+      objectReference: {fileID: 0}
     - target: {fileID: 308858433297934106, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: angle
       value: 180
@@ -5710,6 +5714,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98634836613241168, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_text
+      value: '#3'
+      objectReference: {fileID: 0}
     - target: {fileID: 308858433297934106, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: angle
       value: 110.71
@@ -11701,6 +11709,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98634836613241168, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_text
+      value: '#4'
+      objectReference: {fileID: 0}
     - target: {fileID: 308858433297934106, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: angle
       value: 150.66
@@ -13316,6 +13328,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 98634836613241168, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_text
+      value: '#2'
+      objectReference: {fileID: 0}
     - target: {fileID: 308858433297934106, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: angle
       value: 64.57
@@ -14927,7 +14943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86f95466f0517b42b1dc152b807da33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowdSize: 0
   onGainProtester:
     m_PersistentCalls:
       m_Calls: []
