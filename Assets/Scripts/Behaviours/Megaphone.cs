@@ -59,7 +59,7 @@ public class Megaphone : MonoBehaviour
         var accumulatedBoost = overlappingColliders.Aggregate(1, (currentProduct, nextCollider) =>
         {
             var entry = moraleBoostsEntries.SingleOrDefault(entry => nextCollider.CompareTag(entry.tag));
-            return currentProduct * (entry?.boost ?? 1);
+            return currentProduct + (entry?.boost ?? 0);
         });
         morale.BoostMorale(accumulatedBoost);
     }

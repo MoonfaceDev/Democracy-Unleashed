@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4dfb75e36d406298d7d70c0466baa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
   direction: {x: 0, y: 0}
   lookDirection: 0
 --- !u!114 &9042636698484821847
@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  speedMultiplier: 1.5
 --- !u!95 &4694519916164602943
 Animator:
   serializedVersion: 4

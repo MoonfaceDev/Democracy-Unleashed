@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(PeopleInventory))]
 public class Morale : MonoBehaviour
@@ -6,7 +7,7 @@ public class Morale : MonoBehaviour
     //each milestone gives the player new protester
     public int[] milestones;
     public float moraleDecay;
-
+    public UnityEvent onLevelUp; //TODO: play protesting sound (whistle)
     [HideInInspector] public float points;
 
     private int currentMilestone;
@@ -29,7 +30,7 @@ public class Morale : MonoBehaviour
         {
             return;
         }
-        
+
         points += boost;
         if (points > milestones[currentMilestone])
         {
@@ -42,7 +43,7 @@ public class Morale : MonoBehaviour
         points = 0;
         currentMilestone++;
         crowd.crowdSize += currentMilestone;
-        //TODO: play protesting sound (whistle)
+        onLevelUp.Invoke();
     }
 
     public float ProgressToNextMilestone =>

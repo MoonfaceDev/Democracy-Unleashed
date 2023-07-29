@@ -5101,46 +5101,19 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -132190971
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Positions:
-  - {x: 2.7494977, y: -2.609013, z: 0}
-  - {x: 2.6892946, y: -2.559845, z: 0}
-  - {x: 0.62215406, y: -0.83388305, z: 0}
-  - {x: 0.18062896, y: -1.757072, z: 0}
-  - {x: -0.5217974, y: -2.6401222, z: 0}
-  - {x: -1.4048476, y: -3.3826873, z: 0}
-  - {x: -2.2878978, y: -4.0249057, z: 0}
-  - {x: -3.2913642, y: -4.526639, z: 0}
-  - {x: -3.4920573, y: -4.78754, z: 0}
-  - {x: -4.2346225, y: -4.0249057, z: 0}
-  - {x: -4.9771876, y: -3.3425488, z: 0}
-  - {x: -5.539129, y: -3.2622714, z: 0}
-  - {x: -6.2616243, y: -2.4193597, z: 0}
-  - {x: -7.1647434, y: -1.8373493, z: 0}
-  - {x: -8.228418, y: -1.7370026, z: 0}
-  - {x: -8.669944, y: -1.8172799, z: 0}
-  - {x: -9.3322315, y: -2.740469, z: 0}
-  - {x: -9.753687, y: -3.663658, z: 0}
-  - {x: -10.0346575, y: -4.6671243, z: 0}
-  - {x: -9.854033, y: -5.1889267, z: 0}
-  - {x: -9.272023, y: -6.011769, z: 0}
-  - {x: -8.589666, y: -6.754334, z: 0}
-  - {x: -0.57647943, y: -8.478784, z: 0}
-  - {x: 0.032334805, y: -8.397608, z: 0}
-  - {x: 0.51938605, y: -7.423505, z: 0}
-  - {x: 0.80349946, y: -6.408815, z: 0}
-  - {x: 1.168788, y: -5.4753, z: 0}
-  - {x: 1.168788, y: -4.988249, z: 0}
-  - {x: 2.1834779, y: -4.5823727, z: 0}
-  - {x: 3.116993, y: -4.176497, z: 0}
-  - {x: 4.050508, y: -3.7706208, z: 0}
-  - {x: 4.334621, y: -3.4459195, z: 0}
-  - {x: 3.6446319, y: -2.674755, z: 0}
+  - {x: -7.545444, y: 3.1163461, z: 0}
+  - {x: -8.616792, y: 1.1459513, z: 0}
+  - {x: -9.106558, y: -0.96301556, z: 0}
+  - {x: -7.935242, y: -4.0273466, z: 0}
+  - {x: -6.2844043, y: -5.926158, z: 0}
+  - {x: -3.75207, y: -7.488334, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -5194,7 +5167,7 @@ LineRenderer:
     generateLightingData: 0
   m_MaskInteraction: 0
   m_UseWorldSpace: 0
-  m_Loop: 1
+  m_Loop: 0
   m_ApplyActiveColorSpace: 1
 --- !u!4 &312688796
 Transform:
@@ -5204,7 +5177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312688794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.87, y: 0.4, z: 0}
+  m_LocalPosition: {x: -1.65, y: 0.4, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5953,7 +5926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: reverseAfterCycle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -12578,36 +12551,21 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -132190971
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Positions:
-  - {x: -5.7907624, y: 5.6060114, z: 0}
-  - {x: -3.9720902, y: 6.0046244, z: 0}
-  - {x: -3.2496042, y: 6.2288446, z: 0}
-  - {x: -2.7264245, y: 6.2288446, z: 0}
-  - {x: -2.377638, y: 6.1042776, z: 0}
-  - {x: -1.7548051, y: 5.3070517, z: 0}
-  - {x: -1.4060186, y: 4.3603454, z: 0}
-  - {x: -2.153418, y: 3.6627724, z: 0}
-  - {x: -2.9755576, y: 3.0648527, z: 0}
-  - {x: -3.8973503, y: 2.5665865, z: 0}
-  - {x: -4.7693167, y: 1.9686668, z: 0}
-  - {x: -5.765849, y: 1.8690135, z: 0}
-  - {x: -6.7374687, y: 2.1181467, z: 0}
-  - {x: -7.5596075, y: 2.691153, z: 0}
-  - {x: -8.531227, y: 3.0399394, z: 0}
-  - {x: -9.502847, y: 3.388726, z: 0}
-  - {x: -10.499379, y: 3.637859, z: 0}
-  - {x: -11.446085, y: 3.9617324, z: 0}
-  - {x: -12.392791, y: 4.2856054, z: 0}
-  - {x: -13.414238, y: 4.3603454, z: 0}
-  - {x: -14.435684, y: 4.335432, z: 0}
-  - {x: -15.432216, y: 4.1361256, z: 0}
-  - {x: -16.35401, y: 3.6876857, z: 0}
+  - {x: -7.5550103, y: 3.0610175, z: 0}
+  - {x: -6.5921693, y: 5.058818, z: 0}
+  - {x: -4.432021, y: 5.9813814, z: 0}
+  - {x: -1.1594915, y: 6.686294, z: 0}
+  - {x: 3.2058094, y: 6.371272, z: 0}
+  - {x: 1.675704, y: 2.27599, z: 0}
+  - {x: -2.779603, y: 2.2084851, z: 0}
+  - {x: -4.4672194, y: 0.43086278, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0
+    widthMultiplier: 0.5
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -12660,8 +12618,8 @@ LineRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
-  m_UseWorldSpace: 1
-  m_Loop: 0
+  m_UseWorldSpace: 0
+  m_Loop: 1
   m_ApplyActiveColorSpace: 1
 --- !u!4 &1938057571
 Transform:
@@ -12671,7 +12629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938057569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0.36, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13035,6 +12993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   milestones: 140000003200000046000000
   moraleDecay: 1
+  onLevelUp:
+    m_PersistentCalls:
+      m_Calls: []
   points: 0
 --- !u!114 &2004705256
 MonoBehaviour:
@@ -13420,6 +13381,10 @@ PrefabInstance:
       objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: followMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042636698484821847, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: reverseAfterCycle
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
