@@ -8,6 +8,7 @@ public class Spray : MonoBehaviour
     public float shootCooldown;
     public float hitForce;
     public string targetTag;
+    public int crowdTaken;
     public UnityEvent onShoot;
 
     private Transform target;
@@ -42,6 +43,7 @@ public class Spray : MonoBehaviour
 
     private void Knockback()
     {
+        target.GetComponent<PeopleInventory>().TakeCrowd(crowdTaken);
         target.GetComponent<Knockback>().Apply(hitForce * transform.right);
     }
 

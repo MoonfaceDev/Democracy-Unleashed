@@ -78,9 +78,11 @@ GameObject:
   - component: {fileID: 423275889786397380}
   - component: {fileID: 423275889786397378}
   - component: {fileID: 423275889786397381}
+  - component: {fileID: 3679627321262020277}
+  - component: {fileID: 4467721718632491036}
   m_Layer: 0
   m_Name: Cavalary
-  m_TagString: Untagged
+  m_TagString: Cavalary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c6cf0cf4d9784abb18a524895187c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
   speedMultiplier: 2
   onTargetArrived:
     m_PersistentCalls:
@@ -290,3 +291,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerName: arrivedToTarget
+--- !u!114 &3679627321262020277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423275889786397437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648af9eb38cb7794faf8935bd2493bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  direction: {x: 0, y: 0}
+  target: {x: 0, y: 0}
+--- !u!114 &4467721718632491036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423275889786397437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284ef2d07f30468cb14899727f42c6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crowdTaken: 2
+  chasingBehaviour: {fileID: 423275889786397378}
+  onCatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 423275889786397379}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: catch
+          m_BoolArgument: 0
+        m_CallState: 2
