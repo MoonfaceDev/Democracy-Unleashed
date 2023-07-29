@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum ProtesterType
 {
@@ -15,7 +16,8 @@ public enum ProtesterType
 public class PeopleInventory : MonoBehaviour
 {
     [HideInInspector] public int crowdSize;
-    
+    public UnityEvent<ProtesterType> onGainProtester;
+
     private Dictionary<ProtesterType, bool> protesters;
 
     private void Awake()
@@ -28,6 +30,7 @@ public class PeopleInventory : MonoBehaviour
     public void GainProtester(ProtesterType protesterType)
     {
         protesters[protesterType] = true;
+        onGainProtester.Invoke(protesterType);
     }
 
     public bool HasAllProtesters()
