@@ -37,6 +37,11 @@ public class Morale : MonoBehaviour
             LevelUp();
         }
     }
+    
+    public void MultiplyMorale(float multiplier)
+    {
+        BoostMorale((int)(points * multiplier - points));
+    }
 
     private void LevelUp()
     {

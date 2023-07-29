@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ExtEvents.OdinSerializer.Utilities;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -25,15 +26,32 @@ public class Megaphone : MonoBehaviour
     [FormerlySerializedAs("Combos")] public Combo[] combos;
 
     [HideInInspector] public float voice;
+    [HideInInspector] public bool canCombo;
 
     private Morale morale;
     private bool isCooldown;
-    private Combo currentCombo;
 
     private void Awake()
     {
         morale = GetComponent<Morale>();
         voice = maxVoice;
+        canCombo = true;
+        foreach (var combo in combos)
+        {
+            combo.onCompleted += () =>
+            {
+                ResetCombos();
+                canCombo = false;
+                morale.MultiplyMorale(2);
+            };
+        }
+
+        morale.onLevelUp += () => canCombo = true;
+    }
+
+    private void ResetCombos()
+    {
+        combos.ForEach(combo => combo.ResetCombo());
     }
 
     public void Scream(KeyCode inputKey)
@@ -53,22 +71,17 @@ public class Megaphone : MonoBehaviour
         voice -= screamVoiceCost;
         BoostMorale();
         onScream.Invoke();
-
+        
         ProceedCombo(inputKey);
     }
 
     private void ProceedCombo(KeyCode inputKey)
     {
-        //check if starting a combo
-        if (combos.All(combo => !combo.isActive))
+        if (!canCombo) return;
+        foreach (var combo in combos)
         {
-            //check which one to start
-            currentCombo = combos.Aggregate(currentCombo,
-                (current, nextCombo) => nextCombo.IsFirst(inputKey) ? nextCombo : current
-            );
+            combo.Proceed(inputKey);
         }
-
-        currentCombo?.Proceed(inputKey);
     }
 
     private void BoostMorale()
