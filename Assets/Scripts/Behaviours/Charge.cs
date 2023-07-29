@@ -2,26 +2,24 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
+[RequireComponent(typeof(Notice))]
 public class Charge : MonoBehaviour
 {
-    public GameObject targetObject;
-    [FormerlySerializedAs("speed")] public float speedMultiplier = 1;
-    [FormerlySerializedAs("OnTargetArrived")]
+    public float speedMultiplier = 1;
     public UnityEvent onTargetArrived;
 
-    private Vector2 target;
+    private Notice notice;
     private Walk walk;
 
     private void Awake()
     {
         walk = GetComponent<Walk>();
+        notice = GetComponent<Notice>();
     }
 
     private void OnEnable()
     {
-        target = targetObject.transform.position;
-        var direction = target - (Vector2)transform.position;
-        walk.direction = direction;
+        walk.direction = notice.direction;
         walk.speed *= speedMultiplier;
     }
 
@@ -33,7 +31,7 @@ public class Charge : MonoBehaviour
 
     private void Update()
     {
-        var distanceFromTarget = Vector2.Distance(transform.position, target);
+        var distanceFromTarget = Vector2.Distance(transform.position, notice.target);
 
         if (distanceFromTarget < 0.5f)
         {
