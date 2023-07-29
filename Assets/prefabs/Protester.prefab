@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainAnimator: {fileID: 5948538754272069387}
   modules:
-  - {fileID: 0}
+  - {fileID: 414719117665684520}
 --- !u!114 &414719117665684520
 MonoBehaviour:
   m_ObjectHideFlags: 0
