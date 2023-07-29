@@ -11895,6 +11895,38 @@ PrefabInstance:
       value: 'Lawyer: The supreme court must be independent in order to protect civil
         rights'
       objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1620577007}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 709bc43fa2984da468812367fbdaa681, type: 3}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
       value: 
@@ -12590,7 +12622,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1092854127}
   - component: {fileID: 1092854128}
-  - component: {fileID: 1092854129}
   m_Layer: 0
   m_Name: Random noises
   m_TagString: Untagged
@@ -12631,7 +12662,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 77
+  Priority: 110
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -12709,25 +12740,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1092854129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092854126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a162cee18c4ca4ba35ecb1114333f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: d3916f0ccdbcacc4d87324595495bf1f, type: 3}
-  - {fileID: 8300000, guid: 709bc43fa2984da468812367fbdaa681, type: 3}
-  - {fileID: 8300000, guid: 3679624b21d028d4d8dddd7330599fb5, type: 3}
-  - {fileID: 8300000, guid: 2657c2fc2cb425d488e00d67a6354ffc, type: 3}
-  - {fileID: 8300000, guid: e61f5bbb9bfd09746893816a0cfc4df2, type: 3}
-  run: 1
 --- !u!1 &1127222813
 GameObject:
   m_ObjectHideFlags: 0
@@ -12942,7 +12954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -12958,6 +12970,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
@@ -12977,6 +12993,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2004705257}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1620577007}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -12990,6 +13010,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
@@ -13009,6 +13033,10 @@ PrefabInstance:
       value: AddProtester
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -13025,6 +13053,10 @@ PrefabInstance:
       value: CrowdBehavior, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
@@ -13037,6 +13069,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
       value: follow
       objectReference: {fileID: 0}
@@ -13044,6 +13080,10 @@ PrefabInstance:
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 833852806}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 3679624b21d028d4d8dddd7330599fb5, type: 3}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -13059,6 +13099,10 @@ PrefabInstance:
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: ProtesterAnimation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
@@ -13171,6 +13215,26 @@ PrefabInstance:
       value: 'Hi Tec Guy: The world''s biggest companies are afraid to invest in
         israeli startups '
       objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8300000, guid: 2657c2fc2cb425d488e00d67a6354ffc, type: 3}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
       value: 
@@ -13268,6 +13332,38 @@ PrefabInstance:
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
       value: 'Doctor: NO DEMOCRACY = NO HEALTHCARE'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1620577007}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: d3916f0ccdbcacc4d87324595495bf1f, type: 3}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
@@ -13535,6 +13631,38 @@ PrefabInstance:
       propertyPath: messages.Array.data[1]
       value: 'Maid: This shameful government is full of Knesset members who suppress
         women''s rights'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1620577007}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: e61f5bbb9bfd09746893816a0cfc4df2, type: 3}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
