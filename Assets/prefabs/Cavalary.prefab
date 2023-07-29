@@ -72,10 +72,11 @@ GameObject:
   - component: {fileID: 423275889786397377}
   - component: {fileID: 423275889786397376}
   - component: {fileID: 423275889786397379}
-  - component: {fileID: 423275889786397378}
+  - component: {fileID: 5800013697596341046}
   - component: {fileID: 423275889786397383}
   - component: {fileID: 423275889786397382}
   - component: {fileID: 423275889786397380}
+  - component: {fileID: 423275889786397378}
   - component: {fileID: 423275889786397381}
   m_Layer: 0
   m_Name: Cavalary
@@ -98,7 +99,7 @@ Transform:
   m_Children:
   - {fileID: 423275888634096167}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &423275889786397376
 SpriteRenderer:
@@ -138,8 +139,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 804255067
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.4716981, g: 0.30743232, b: 0, a: 1}
@@ -151,7 +152,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &423275889786397379
 Animator:
   serializedVersion: 4
@@ -172,35 +173,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &423275889786397378
-MonoBehaviour:
+--- !u!61 &5800013697596341046
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423275889786397437}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3c6cf0cf4d9784abb18a524895187c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  speed: 3
-  OnTargetArrived:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 423275889786397381}
-        m_TargetAssemblyTypeName: TriggerAnimator, Assembly-CSharp
-        m_MethodName: SetTrigger
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!50 &423275889786397383
 Rigidbody2D:
   serializedVersion: 4
@@ -234,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4dfb75e36d406298d7d70c0466baa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
   direction: {x: 0, y: 0}
   lookDirection: 0
 --- !u!114 &423275889786397380
@@ -250,7 +248,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trail: {fileID: 0}
-  reverseAfterCycle: 0
+--- !u!114 &423275889786397378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423275889786397437}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c6cf0cf4d9784abb18a524895187c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  speedMultiplier: 2
+  onTargetArrived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 423275889786397381}
+        m_TargetAssemblyTypeName: TriggerAnimator, Assembly-CSharp
+        m_MethodName: SetTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &423275889786397381
 MonoBehaviour:
   m_ObjectHideFlags: 0

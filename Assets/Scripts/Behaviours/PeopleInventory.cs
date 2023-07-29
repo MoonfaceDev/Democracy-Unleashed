@@ -30,7 +30,7 @@ public class PeopleInventory : MonoBehaviour
         protesters[protesterType] = true;
     }
 
-    public bool HasRequiredProtesters()
+    public bool HasAllProtesters()
     {
         return protesters.Values.All(value => value);
     }

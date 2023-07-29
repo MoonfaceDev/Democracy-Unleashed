@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Charge : MonoBehaviour
 {
     public GameObject targetObject;
-    public float speed;
-    public UnityEvent OnTargetArrived;
+    [FormerlySerializedAs("speed")] public float speedMultiplier = 1;
+    [FormerlySerializedAs("OnTargetArrived")]
+    public UnityEvent onTargetArrived;
 
     private Vector2 target;
-    private Vector2 direction;
-    private float distanceFromTarget;
     private Walk walk;
 
     private void Awake()
@@ -22,23 +20,24 @@ public class Charge : MonoBehaviour
     private void OnEnable()
     {
         target = targetObject.transform.position;
-        direction = target - (Vector2)transform.position;
+        var direction = target - (Vector2)transform.position;
         walk.direction = direction;
+        walk.speed *= speedMultiplier;
     }
 
     private void OnDisable()
     {
         walk.direction = Vector2.zero;
+        walk.speed /= speedMultiplier;
     }
 
     private void Update()
     {
-        walk.speed = speed;
+        var distanceFromTarget = Vector2.Distance(transform.position, target);
 
-        distanceFromTarget = Vector2.Distance(transform.position, target);
-
-        if (distanceFromTarget < 0.2f)
-            OnTargetArrived.Invoke();
+        if (distanceFromTarget < 0.5f)
+        {
+            onTargetArrived.Invoke();
+        }
     }
-
 }

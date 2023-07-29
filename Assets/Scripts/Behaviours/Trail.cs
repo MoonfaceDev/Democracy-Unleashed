@@ -5,10 +5,8 @@ using UnityEngine;
 public class Trail : MonoBehaviour
 {
     public LineRenderer trail;
-    public bool reverseAfterCycle; // if true, switch direction in the end
 
     private Walk walk;
-
     private int trailDirection = 1;
 
     // Follow current point => switch to next => follow trail
@@ -26,7 +24,7 @@ public class Trail : MonoBehaviour
         if (Vector2.Distance(transform.position, target) < 0.1f) // reached target point
         {
             var trailEnded = currentPointIndex == trail.positionCount - 1 || currentPointIndex == 0;
-            if (trailEnded && reverseAfterCycle)
+            if (trailEnded && !trail.loop)
             {
                 trailDirection *= -1;
             }
@@ -55,7 +53,6 @@ public class Trail : MonoBehaviour
 
     private void OnDisable()
     {
-        currentPointIndex = GetClosestPointIndex();
         walk.direction = Vector2.zero;
     }
 }

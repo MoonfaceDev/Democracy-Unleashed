@@ -13,5 +13,4 @@ public class DistanceToClosestBrainModule : BrainModule
             .Select(collider => (collider.transform.position - Animator.transform.position).magnitude);
         Animator.SetFloat("distanceToClosest", distances.Min());
     }
-
 }
