@@ -11579,6 +11579,24 @@ PrefabInstance:
       propertyPath: type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Lawyer: They are making irreversible distructive changes to the laws!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Lawyer: The supreme court must be independent in order to protect civil
+        rights'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: 'Lawyer: The supreme court must be independent in order to protect civil
+        rights'
+      objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
       value: 
@@ -12310,7 +12328,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Pilot: hello im a pilot yey'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Pilot: We are not serving a DICTATORSHIP'
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
@@ -12404,7 +12434,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Hi Tec Guy: The judicial reform crashes the economy!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Hi Tec Guy: The world''s biggest companies are afraid to invest in
+        israeli startups '
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
@@ -12498,7 +12541,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Doctor: NO DEMOCRACY = NO HEALTHCARE'
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
@@ -12747,7 +12794,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Maid: We are here to protect women rights'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Maid: This shameful government is full of Knesset members who suppress
+        women''s rights'
       objectReference: {fileID: 0}
     - target: {fileID: 8173677160984903190, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: target
