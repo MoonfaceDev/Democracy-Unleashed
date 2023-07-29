@@ -16,7 +16,7 @@ public class PoliceBarrierRetreat : MonoBehaviour
     {
         walking = true;
         onRetreat.Invoke();
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 1);
     }
 
     private void Update()
