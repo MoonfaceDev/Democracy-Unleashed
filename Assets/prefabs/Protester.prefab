@@ -1,53 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &322190148636038443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8805913068590028786}
-  - component: {fileID: 8973994769692434192}
-  m_Layer: 0
-  m_Name: Close Range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8805913068590028786
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322190148636038443}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9042636698484821832}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &8973994769692434192
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322190148636038443}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3
 --- !u!1 &9005096049245059512
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,8 +77,9 @@ GameObject:
   - component: {fileID: 3536948177200621852}
   - component: {fileID: 5948538754272069387}
   - component: {fileID: 7863291211318798218}
-  - component: {fileID: 6376460843783471964}
   - component: {fileID: 6950207100677969228}
+  - component: {fileID: 951724579365007442}
+  - component: {fileID: 523384185762771285}
   m_Layer: 0
   m_Name: Protester
   m_TagString: Policeman
@@ -147,7 +100,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8588561246672719125}
-  - {fileID: 8805913068590028786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -290,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea14ef5e267489c913a28d392f6368d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeRange: {fileID: 8973994769692434192}
+  closeRange: {fileID: 0}
 --- !u!95 &5948538754272069387
 Animator:
   serializedVersion: 4
@@ -327,33 +279,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
---- !u!114 &6376460843783471964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9042636698484821835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fa53042ba6a45b3b697e8a4d7c7ea14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6950207100677969228}
-        m_TargetAssemblyTypeName: DialogEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6950207100677969228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,5 +306,46 @@ MonoBehaviour:
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: dialogEnded
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &951724579365007442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042636698484821835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1821e860d24645d4b80604a08f99eb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: startDialog
+--- !u!114 &523384185762771285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042636698484821835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a81c7f8dd454751a6a7405ceafbfc34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  onGain:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 951724579365007442}
+        m_TargetAssemblyTypeName: TriggerAnimator, Assembly-CSharp
+        m_MethodName: SetTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

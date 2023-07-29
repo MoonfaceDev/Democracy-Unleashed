@@ -13,6 +13,7 @@ public class Dialog : SingletonBehaviour<Dialog>
     public float continueFlickerRate;
 
     private const string ContinueSymbol = " >>";
+    private const int ContinueFlickerCount = 4;
 
     private Queue<string> messageQueue;
     [CanBeNull] private Action onCurrentConversationEnd;
@@ -77,12 +78,14 @@ public class Dialog : SingletonBehaviour<Dialog>
             text.text += character;
         }
 
-        while (true)
+        for (var i = 0; i < ContinueFlickerCount; i++)
         {
             yield return new WaitForSeconds(continueFlickerRate);
             text.text = message;
             yield return new WaitForSeconds(continueFlickerRate);
             text.text = message + ContinueSymbol;
         }
+        
+        ShowNextMessage();
     }
 }

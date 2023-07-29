@@ -1,18 +1,21 @@
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PoliceBarrierRetreat : MonoBehaviour
 {
-    private const float Speed = 5;
-
     public GameObject police;
-    public GameObject blockade;
+    public float angle;
+    public UnityEvent onRetreat;
+
+    private const float Speed = 10;
 
     private bool walking;
 
     public void Retreat()
     {
-        blockade.SetActive(false);
         walking = true;
+        onRetreat.Invoke();
         Destroy(gameObject, 5);
     }
 
@@ -20,7 +23,14 @@ public class PoliceBarrierRetreat : MonoBehaviour
     {
         if (walking)
         {
-            police.transform.Translate(blockade.transform.up * (-1 * Speed * Time.deltaTime));
+            police.transform.Translate(Quaternion.Euler(0, 0, angle) * Vector3.right * (Speed * Time.deltaTime));
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        var start = transform.position;
+        var end = start + Quaternion.Euler(0, 0, angle) * Vector3.right * 3;
+        Handles.DrawBezier(start, end, start, end, Color.blue, null, 10);
     }
 }
