@@ -9,7 +9,7 @@ public class PoliceBarrier : PlayerTrigger
 
     protected virtual bool HasRequirements(PeopleInventory inventory)
     {
-        return inventory.crowdSize >= requiredCrowd;
+        return inventory.CrowdSize >= requiredCrowd;
     }
 
     protected override void Interact(GameObject player)

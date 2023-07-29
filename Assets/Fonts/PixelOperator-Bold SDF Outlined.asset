@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: PixelOperator-Bold SDF
+  m_Name: PixelOperator-Bold SDF Outlined
   m_EditorClassIdentifier: 
-  hashCode: -1753766191
+  hashCode: 635583509
   material: {fileID: 7307456736399505445}
-  materialHashCode: -175597999
+  materialHashCode: -1387658091
   m_Version: 1.1.0
   m_SourceFontFileGUID: b98494868ea0b0b4e8c67cc05a0c675f
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: b98494868ea0b0b4e8c67cc05a0c675f, type: 3}
@@ -2613,7 +2613,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.5
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333

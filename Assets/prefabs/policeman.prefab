@@ -224,8 +224,9 @@ GameObject:
   - component: {fileID: 9042636698484821847}
   - component: {fileID: 8173677160984903190}
   - component: {fileID: 4694519916164602943}
+  - component: {fileID: 2473509856331119234}
   m_Layer: 0
-  m_Name: Policeman
+  m_Name: policeman
   m_TagString: Policeman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,6 +349,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2473509856331119234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042636698484821835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284ef2d07f30468cb14899727f42c6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crowdTaken: 1
+  chasingBehaviour: {fileID: 8173677160984903190}
+  onCatch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4694519916164602943}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: catch
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &5521321869736461249
 PrefabInstance:
   m_ObjectHideFlags: 0

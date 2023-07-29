@@ -8,6 +8,6 @@ public class CrowdCounter : MonoBehaviour
 
     private void Update()
     {
-        text.text = "crowd: " + inventory.crowdSize;
+        text.text = "crowd: " + inventory.CrowdSize;
     }
 }

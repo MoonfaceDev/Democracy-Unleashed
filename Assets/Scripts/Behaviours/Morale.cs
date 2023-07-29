@@ -5,7 +5,6 @@ using ExtEvents;
 [RequireComponent(typeof(PeopleInventory))]
 public class Morale : MonoBehaviour
 {
-    //each milestone gives the player new protester
     public int[] milestones;
     public float moraleDecay;
     public ExtEvent onLevelUp; //TODO: play protesting sound (whistle)
@@ -13,11 +12,11 @@ public class Morale : MonoBehaviour
 
     private int currentMilestone;
 
-    private PeopleInventory crowd;
+    private PeopleInventory inventory;
 
     private void Awake()
     {
-        crowd = GetComponent<PeopleInventory>();
+        inventory = GetComponent<PeopleInventory>();
     }
 
     private void Update()
@@ -43,7 +42,7 @@ public class Morale : MonoBehaviour
     {
         points = 0;
         currentMilestone++;
-        crowd.crowdSize += currentMilestone;
+        inventory.GainCrowd(currentMilestone);
         onLevelUp.Invoke();
     }
 
