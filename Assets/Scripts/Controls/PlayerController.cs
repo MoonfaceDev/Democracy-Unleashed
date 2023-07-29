@@ -19,7 +19,17 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            megaphone.Scream();
+            megaphone.Scream(KeyCode.F);
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            megaphone.Scream(KeyCode.B);
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            megaphone.Scream(KeyCode.S);
         }
     }
 

@@ -27,13 +27,16 @@ public class Megaphone : MonoBehaviour
     private Morale morale;
     private bool isCooldown;
 
+    private int currentCombo;
+    public Combo[] Combos;
+
     private void Awake()
     {
         morale = GetComponent<Morale>();
         voice = maxVoice;
     }
 
-    public void Scream()
+    public void Scream(KeyCode inputKey)
     {
         if (isCooldown)
         {
@@ -50,7 +53,27 @@ public class Megaphone : MonoBehaviour
         voice -= screamVoiceCost;
         BoostMorale();
         onScream.Invoke();
+
+        //check if starting a combo
+        bool noComboIsActive = true;
+
+        foreach (Combo combo in Combos)
+            noComboIsActive = combo.isActive ? false : noComboIsActive;
+
+        //check which one to start
+        if (noComboIsActive)
+        {
+            for (int i=0; i<Combos.Length; i++)
+            {
+                if (Combos[i].isStartingThisCombo(inputKey))
+                    currentCombo = i;
+            }
+        }
+
+        Combos[currentCombo].Proceed(inputKey);
     }
+
+
 
     private void BoostMorale()
     {
