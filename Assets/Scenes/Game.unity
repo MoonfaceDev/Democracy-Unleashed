@@ -15396,7 +15396,7 @@ MonoBehaviour:
             SerializationNodes:
             - Name: 
               Entry: 4
-              Data: 1
+              Data: 0.8
             Bytes: 
           _canBeDynamic: 0
           _serializedArg: 
@@ -15409,9 +15409,52 @@ MonoBehaviour:
           _typeNameAndAssembly: 
           _suppressLogs: 0
         _methodName: PlayOneShot
+      - _persistentArguments:
+        - _index: 0
+          _isSerialized: 1
+          _targetType:
+            GuidAssignmentFailed: 0
+            GUID: 
+            _typeNameAndAssembly: System.Single, mscorlib
+            _suppressLogs: 1
+          _fromType:
+            GuidAssignmentFailed: 0
+            GUID: 
+            _typeNameAndAssembly: 
+            _suppressLogs: 0
+          _serializationData:
+            DataFormat: 2
+            ReferencedUnityObjects: []
+            SerializationNodes:
+            - Name: 
+              Entry: 4
+              Data: 1.5
+            Bytes: 
+          _canBeDynamic: 0
+          _serializedArg: 
+        _target: {fileID: 2004705255}
+        _isStatic: 0
+        CallState: 2
+        _staticType:
+          GuidAssignmentFailed: 0
+          GUID: 
+          _typeNameAndAssembly: 
+          _suppressLogs: 0
+        _methodName: BoostMoraleMultiplier
+      - _persistentArguments: []
+        _target: {fileID: 2004705254}
+        _isStatic: 0
+        CallState: 2
+        _staticType:
+          GuidAssignmentFailed: 0
+          GUID: 
+          _typeNameAndAssembly: 
+          _suppressLogs: 0
+        _methodName: UseCombo
       Expanded: 1
     sequence: 62000000730000006200000073000000
     isActive: 0
+  canCombo: 0
 --- !u!114 &2004705255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15470,7 +15513,7 @@ MonoBehaviour:
           SerializationNodes:
           - Name: 
             Entry: 4
-            Data: 1
+            Data: 0.8
           Bytes: 
         _canBeDynamic: 0
         _serializedArg: 
@@ -15483,6 +15526,16 @@ MonoBehaviour:
         _typeNameAndAssembly: 
         _suppressLogs: 0
       _methodName: PlayOneShot
+    - _persistentArguments: []
+      _target: {fileID: 2004705254}
+      _isStatic: 0
+      CallState: 2
+      _staticType:
+        GuidAssignmentFailed: 0
+        GUID: 
+        _typeNameAndAssembly: 
+        _suppressLogs: 0
+      _methodName: GainCombo
     Expanded: 1
   points: 0
 --- !u!114 &2004705256

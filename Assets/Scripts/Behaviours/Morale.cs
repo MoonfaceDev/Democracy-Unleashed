@@ -14,6 +14,9 @@ public class Morale : MonoBehaviour
 
     private PeopleInventory inventory;
 
+    //can only combo once in each milestone
+    private bool canCombo;
+
     private void Awake()
     {
         inventory = GetComponent<PeopleInventory>();
@@ -38,6 +41,20 @@ public class Morale : MonoBehaviour
         }
     }
 
+    public void BoostMoraleMultiplier(float multiplier)
+    {
+        if (currentMilestone >= milestones.Length)
+        {
+            return;
+        }
+
+        points = (int)(points * multiplier);
+        if (points > milestones[currentMilestone])
+        {
+            LevelUp();
+        }
+    }
+
     private void LevelUp()
     {
         points = 0;
@@ -48,4 +65,5 @@ public class Morale : MonoBehaviour
 
     public float ProgressToNextMilestone =>
         currentMilestone < milestones.Length ? points / milestones[currentMilestone] : 0;
+
 }

@@ -30,10 +30,15 @@ public class Megaphone : MonoBehaviour
     private int currentCombo;
     public Combo[] Combos;
 
+    //can only combo once in each milestone
+    [HideInInspector]
+    public bool canCombo;
+
     private void Awake()
     {
         morale = GetComponent<Morale>();
         voice = maxVoice;
+        canCombo = true;
     }
 
     public void Scream(KeyCode inputKey)
@@ -70,7 +75,8 @@ public class Megaphone : MonoBehaviour
             }
         }
 
-        Combos[currentCombo].Proceed(inputKey);
+        if (canCombo)
+            Combos[currentCombo].Proceed(inputKey);
     }
 
 
@@ -95,5 +101,15 @@ public class Megaphone : MonoBehaviour
         {
             isCooldown = false;
         }
+    }
+
+    public void UseCombo()
+    {
+        canCombo = false;
+    }
+
+    public void GainCombo()
+    {
+        canCombo = true;
     }
 }
