@@ -14518,6 +14518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985428772}
   - component: {fileID: 1985428773}
+  - component: {fileID: 1985428776}
   - component: {fileID: 1985428775}
   - component: {fileID: 1985428774}
   m_Layer: 5
@@ -14564,6 +14565,36 @@ MonoBehaviour:
   text: {fileID: 2019430386}
   characterRate: 0.04
   continueFlickerRate: 0.3
+  onDialogShow:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1985428776}
+        m_TargetAssemblyTypeName: WalkDisabler, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDialogHide:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1985428776}
+        m_TargetAssemblyTypeName: WalkDisabler, Assembly-CSharp
+        m_MethodName: Enable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1985428774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14609,6 +14640,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1985428776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985428771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015c0128fcae4162b92630e12c5f0df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004705244
 GameObject:
   m_ObjectHideFlags: 0
