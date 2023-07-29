@@ -67,6 +67,7 @@ public class Dialog : SingletonBehaviour<Dialog>
             dialogPanel.SetActive(false);
             onDialogHide.Invoke();
             onCurrentConversationEnd?.Invoke();
+            onCurrentConversationEnd = null;
             return;
         }
 
