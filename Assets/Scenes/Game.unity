@@ -11718,6 +11718,10 @@ PrefabInstance:
       propertyPath: type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 633f1cca6ea91f04d9b008025251b691, type: 2}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.size
       value: 2
@@ -12613,6 +12617,10 @@ PrefabInstance:
       propertyPath: type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 9bcbf5adb55bfa643808d03b68df7c1a, type: 2}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.size
       value: 2
@@ -12967,6 +12975,10 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: ccfe67f64a526b84cbba0424145f1545, type: 2}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.size
       value: 2
@@ -13074,6 +13086,10 @@ PrefabInstance:
       propertyPath: type
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 8627ea240f04a044aa5f8e988166df80, type: 2}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
       value: 'Doctor: NO DEMOCRACY = NO HEALTHCARE'
@@ -13327,6 +13343,10 @@ PrefabInstance:
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 235aa4c2d1cabb145bf0b634a9ce7dfd, type: 2}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.size
       value: 2
