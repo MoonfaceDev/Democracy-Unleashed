@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Dialog : SingletonBehaviour<Dialog>
 {
@@ -11,10 +12,13 @@ public class Dialog : SingletonBehaviour<Dialog>
     public TextMeshProUGUI text;
     public float characterRate;
     public float continueFlickerRate;
+    public UnityEvent onDialogShow;
+    public UnityEvent onDialogHide;
 
     private const string ContinueSymbol = " >>";
     private const int ContinueFlickerCount = 4;
 
+    private bool skipEnabled;
     private Queue<string> messageQueue;
     [CanBeNull] private Action onCurrentConversationEnd;
     private Coroutine messageCoroutine;
@@ -39,12 +43,13 @@ public class Dialog : SingletonBehaviour<Dialog>
 
         onCurrentConversationEnd = onConversationEnd;
         dialogPanel.SetActive(true);
+        onDialogShow.Invoke();
         ShowNextMessage();
     }
 
     private void Update()
     {
-        if (Input.GetButtonUp("Continue"))
+        if (skipEnabled && Input.GetButtonUp("Continue"))
         {
             ShowNextMessage();
         }
@@ -60,6 +65,7 @@ public class Dialog : SingletonBehaviour<Dialog>
         if (messageQueue.Count == 0)
         {
             dialogPanel.SetActive(false);
+            onDialogHide.Invoke();
             onCurrentConversationEnd?.Invoke();
             return;
         }
@@ -72,11 +78,13 @@ public class Dialog : SingletonBehaviour<Dialog>
     {
         text.text = "";
 
+        skipEnabled = false;
         foreach (var character in message)
         {
             yield return new WaitForSeconds(characterRate);
             text.text += character;
         }
+        skipEnabled = true;
 
         for (var i = 0; i < ContinueFlickerCount; i++)
         {
