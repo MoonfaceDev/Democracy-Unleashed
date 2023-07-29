@@ -5283,9 +5283,13 @@ PrefabInstance:
       propertyPath: onRetreat.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3238883589687893049, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5332,6 +5336,10 @@ PrefabInstance:
       value: Block 5
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredCrowd
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
       value: 0
       objectReference: {fileID: 0}
@@ -5355,10 +5363,46 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Shikma: Let me pass please'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Policeman: Nope'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: 'Shikma: arent you worried for the future of our nation?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[3]
+      value: 'Policeman: I AM JUST DOING MY WORK'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[4]
+      value: 'Shikma: ok I need 20 protesters'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Shikma: Yariv Levin GO HOME!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Policeman: I cant stay ahaaa too much people here'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082347229712, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.49
@@ -5693,9 +5737,13 @@ PrefabInstance:
       propertyPath: onRetreat.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3238883589687893049, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5742,6 +5790,10 @@ PrefabInstance:
       value: Block 3
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredCrowd
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
       value: 0
       objectReference: {fileID: 0}
@@ -5765,10 +5817,60 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Policeman: STOP RIGHT THERE SHIKMA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'policeman: once and for all the supreme court will lose its extreme
+        power'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: 'Shikma: The new laws destroy the separation of authorities in Israel'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[3]
+      value: 'Sikma: The ministers will pass any law they wish, anti LGBTQ laws for
+        example...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[4]
+      value: 'policeman: Nonsense! get out of here SMOLANIT (lefty)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[5]
+      value: 'Shikma: I need 15 protesters to pass'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Shikma: DEMOCRACY WILL NOT DIE!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Policeman: speaking of democracy, You are breaking the LAW!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: 'Policeman: Retreat!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[3]
+      value: '*NEW SKILL* press d-m-c-r-c to megaphone combo'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082354402646, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.6
@@ -5913,8 +6015,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1629321959
-  m_SortingLayer: 1
+  m_SortingLayerID: -1060770957
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48a5dbec7211d3b4b8c07eccad05f12a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11283,6 +11385,144 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &863148498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863148500}
+  - component: {fileID: 863148501}
+  m_Layer: 0
+  m_Name: line4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &863148500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863148498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 0, z: -0.10625218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &863148501
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863148498}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: -13.726804, y: -3.1467366, z: 0}
+  - {x: -7.9027605, y: -10.326376, z: 0}
+  - {x: -0.7733278, y: -10.928864, z: 0}
+  - {x: 9.770199, y: -9.121402, z: 0}
+  - {x: 14.740718, y: -2.7450786, z: 0}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 0
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
 --- !u!1 &931914123
 GameObject:
   m_ObjectHideFlags: 0
@@ -11357,7 +11597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11472,9 +11712,13 @@ PrefabInstance:
       propertyPath: onRetreat.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3238883589687893049, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11521,6 +11765,10 @@ PrefabInstance:
       value: Block 4
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredCrowd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
       value: 0
       objectReference: {fileID: 0}
@@ -11544,10 +11792,39 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Policeman: Who are you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Shikma: *waving flag and screaming* I AM HERE FOR THE NATIONAL DAY
+        OF DISRUPTION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: 'Policeman: ok bring me 1 protester'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Shikma: Thank you officer'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Policeman (Ami Eshed): Let her protest, she is fighting for our rights'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082347229712, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.09
@@ -12021,7 +12298,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1172933883
 PrefabInstance:
@@ -12053,7 +12330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12147,7 +12424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12241,7 +12518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12490,7 +12767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12812,9 +13089,13 @@ PrefabInstance:
       propertyPath: onRetreat.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3238883589687893049, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12861,6 +13142,10 @@ PrefabInstance:
       value: Block 2
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: requiredCrowd
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
       value: 0
       objectReference: {fileID: 0}
@@ -12884,10 +13169,34 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Policeman: No Entry Miss!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Shikma: I need 7 protesters to pass'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Shikma: hahaa Together we fight the corrupt government!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Policeman: *running back to station for reinforcement*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[2]
+      value: '*NEW SKILL* press '
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082347229712, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.48
@@ -13127,7 +13436,7 @@ RectTransform:
   - {fileID: 1985428772}
   - {fileID: 1396012425}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13272,7 +13581,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1719252653
 PrefabInstance:
@@ -13346,9 +13655,13 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -0.7367535
       objectReference: {fileID: 0}
+    - target: {fileID: 3238883589687893049, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13989,7 +14302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1899780740}
   text: {fileID: 2019430386}
-  characterRate: 0.06
+  characterRate: 0.04
   continueFlickerRate: 0.3
 --- !u!114 &1985428774
 MonoBehaviour:
@@ -14509,7 +14822,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 423275889786397377, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 423275889786397377, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14558,10 +14871,26 @@ PrefabInstance:
     - target: {fileID: 423275889786397380, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: trail
       value: 
-      objectReference: {fileID: 1667232529}
+      objectReference: {fileID: 863148501}
     - target: {fileID: 423275889786397437, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: m_Name
       value: Cavalary
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679627321262020277, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679627321262020277, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 2004705244}
+    - target: {fileID: 5800013697596341046, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800013697596341046, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -14584,7 +14913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 897042361157109644, guid: b06aba46516d32444bcf31b97950fd5f, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 897042361157109644, guid: b06aba46516d32444bcf31b97950fd5f, type: 3}
       propertyPath: m_LocalScale.x
