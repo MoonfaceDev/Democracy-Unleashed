@@ -5076,20 +5076,18 @@ MonoBehaviour:
   messages:
   - Kaplan
   onConversationEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6670785098257857344}
-        m_TargetAssemblyTypeName: PoliceBarrierRetreat, Assembly-CSharp
-        m_MethodName: Retreat
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+    _persistentListeners:
+    - _persistentArguments: []
+      _target: {fileID: 6670785098257857344}
+      _isStatic: 0
+      CallState: 2
+      _staticType:
+        GuidAssignmentFailed: 0
+        GUID: 
+        _typeNameAndAssembly: 
+        _suppressLogs: 0
+      _methodName: Retreat
+    Expanded: 1
 --- !u!114 &6670785098257857344
 MonoBehaviour:
   m_ObjectHideFlags: 0

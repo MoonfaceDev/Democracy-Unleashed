@@ -165,8 +165,8 @@ MonoBehaviour:
   - 'Policeman: STOP you are not allowed to pass'
   - 'Shikma: I need at least 3 protesters to pass...'
   onConversationEnd:
-    m_PersistentCalls:
-      m_Calls: []
+    _persistentListeners: []
+    Expanded: 1
 --- !u!114 &3941644082071692287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,20 +184,18 @@ MonoBehaviour:
   - 'Policeman: OH NO RETREAT :0'
   - '*NEW SKILL* press b-s-b-s to do megaphone combo!'
   onConversationEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 308858433297934106}
-        m_TargetAssemblyTypeName: PoliceBarrierRetreat, Assembly-CSharp
-        m_MethodName: Retreat
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+    _persistentListeners:
+    - _persistentArguments: []
+      _target: {fileID: 308858433297934106}
+      _isStatic: 0
+      CallState: 2
+      _staticType:
+        GuidAssignmentFailed: 0
+        GUID: 
+        _typeNameAndAssembly: 
+        _suppressLogs: 0
+      _methodName: Retreat
+    Expanded: 1
 --- !u!114 &308858433297934106
 MonoBehaviour:
   m_ObjectHideFlags: 0
