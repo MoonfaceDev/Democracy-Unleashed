@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Megaphone : MonoBehaviour
 {
@@ -21,14 +22,13 @@ public class Megaphone : MonoBehaviour
     public UnityEvent onScream;
     public Collider2D megaphoneRange;
     public List<MoraleBoostEntry> moraleBoostsEntries;
+    [FormerlySerializedAs("Combos")] public Combo[] combos;
 
     [HideInInspector] public float voice;
 
     private Morale morale;
     private bool isCooldown;
-
-    private int currentCombo;
-    public Combo[] Combos;
+    private Combo currentCombo;
 
     private void Awake()
     {
@@ -54,32 +54,28 @@ public class Megaphone : MonoBehaviour
         BoostMorale();
         onScream.Invoke();
 
-        //check if starting a combo
-        bool noComboIsActive = true;
-
-        foreach (Combo combo in Combos)
-            noComboIsActive = combo.isActive ? false : noComboIsActive;
-
-        //check which one to start
-        if (noComboIsActive)
-        {
-            for (int i=0; i<Combos.Length; i++)
-            {
-                if (Combos[i].isStartingThisCombo(inputKey))
-                    currentCombo = i;
-            }
-        }
-
-        Combos[currentCombo].Proceed(inputKey);
+        ProceedCombo(inputKey);
     }
 
+    private void ProceedCombo(KeyCode inputKey)
+    {
+        //check if starting a combo
+        if (combos.All(combo => !combo.isActive))
+        {
+            //check which one to start
+            currentCombo = combos.Aggregate(currentCombo,
+                (current, nextCombo) => nextCombo.IsFirst(inputKey) ? nextCombo : current
+            );
+        }
 
+        currentCombo?.Proceed(inputKey);
+    }
 
     private void BoostMorale()
     {
         var overlappingColliders = new List<Collider2D>();
         megaphoneRange.OverlapCollider(new ContactFilter2D(), overlappingColliders);
-        var accumulatedBoost = overlappingColliders.Aggregate(1, (currentProduct, nextCollider) =>
+        var accumulatedBoost = overlappingColliders.Aggregate(0, (currentProduct, nextCollider) =>
         {
             var entry = moraleBoostsEntries.SingleOrDefault(entry => nextCollider.CompareTag(entry.tag));
             return currentProduct + (entry?.boost ?? 0);

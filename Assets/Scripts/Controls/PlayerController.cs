@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     private Walk walk;
     private Megaphone megaphone;
 
+    private static readonly KeyCode[] MegaphoneKeys = { KeyCode.F, KeyCode.B, KeyCode.S };
+
     private void Awake()
     {
         walk = GetComponent<Walk>();
@@ -17,19 +19,12 @@ public class PlayerController : MonoBehaviour
     {
         UpdateWalkDirection();
 
-        if (Input.GetKeyDown(KeyCode.F))
+        foreach (var key in MegaphoneKeys)
         {
-            megaphone.Scream(KeyCode.F);
-        }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            megaphone.Scream(KeyCode.B);
-        }
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            megaphone.Scream(KeyCode.S);
+            if (Input.GetKeyDown(key))
+            {
+                megaphone.Scream(key);
+            }
         }
     }
 

@@ -7,9 +7,6 @@ public class PlayRandomClips : MonoBehaviour
 {
     public AudioClip[] clips;
 
-    [HideInInspector]
-    public bool run;
-
     private int randomIndex;
     private float randomDelay;
 
@@ -22,13 +19,12 @@ public class PlayRandomClips : MonoBehaviour
 
     private void Start()
     {
-        run = true;
         StartCoroutine(PlayClips());
     }
 
-    IEnumerator PlayClips()
+    private IEnumerator PlayClips()
     {
-        while (run)
+        while (true)
         {
             randomIndex = Random.Range(0, clips.Length - 1);
             randomDelay = Random.Range(20, 40);

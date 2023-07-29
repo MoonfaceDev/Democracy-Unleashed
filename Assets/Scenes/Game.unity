@@ -12560,7 +12560,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3679624b21d028d4d8dddd7330599fb5, type: 3}
   - {fileID: 8300000, guid: 2657c2fc2cb425d488e00d67a6354ffc, type: 3}
   - {fileID: 8300000, guid: e61f5bbb9bfd09746893816a0cfc4df2, type: 3}
-  run: 1
 --- !u!1 &1127222813
 GameObject:
   m_ObjectHideFlags: 0
@@ -15350,68 +15349,8 @@ MonoBehaviour:
     boost: 4
   - tag: WaterCannon
     boost: 7
+  combos: []
   voice: 0
-  Combos:
-  - OnCompleted:
-      _persistentListeners:
-      - _persistentArguments:
-        - _index: 0
-          _isSerialized: 1
-          _targetType:
-            GuidAssignmentFailed: 0
-            GUID: 
-            _typeNameAndAssembly: UnityEngine.AudioClip, UnityEngine.AudioModule
-            _suppressLogs: 1
-          _fromType:
-            GuidAssignmentFailed: 0
-            GUID: 
-            _typeNameAndAssembly: 
-            _suppressLogs: 0
-          _serializationData:
-            DataFormat: 2
-            ReferencedUnityObjects:
-            - {fileID: 8300000, guid: d663fdfad1632054abd85c456014ecb7, type: 3}
-            SerializationNodes:
-            - Name: 
-              Entry: 10
-              Data: 0
-            Bytes: 
-          _canBeDynamic: 0
-          _serializedArg: 
-        - _index: 0
-          _isSerialized: 1
-          _targetType:
-            GuidAssignmentFailed: 0
-            GUID: 
-            _typeNameAndAssembly: System.Single, mscorlib
-            _suppressLogs: 1
-          _fromType:
-            GuidAssignmentFailed: 0
-            GUID: 
-            _typeNameAndAssembly: 
-            _suppressLogs: 0
-          _serializationData:
-            DataFormat: 2
-            ReferencedUnityObjects: []
-            SerializationNodes:
-            - Name: 
-              Entry: 4
-              Data: 1
-            Bytes: 
-          _canBeDynamic: 0
-          _serializedArg: 
-        _target: {fileID: 1620577007}
-        _isStatic: 0
-        CallState: 2
-        _staticType:
-          GuidAssignmentFailed: 0
-          GUID: 
-          _typeNameAndAssembly: 
-          _suppressLogs: 0
-        _methodName: PlayOneShot
-      Expanded: 1
-    sequence: 62000000730000006200000073000000
-    isActive: 0
 --- !u!114 &2004705255
 MonoBehaviour:
   m_ObjectHideFlags: 0
