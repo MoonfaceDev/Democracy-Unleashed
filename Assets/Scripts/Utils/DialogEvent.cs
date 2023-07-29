@@ -9,6 +9,10 @@ public class DialogEvent : MonoBehaviour
 
     public void Invoke()
     {
+        if (!enabled)
+        {
+            return;
+        }
         Dialog.Instance.StartConversation(messages, () => onConversationEnd.Invoke());
     }
 }
