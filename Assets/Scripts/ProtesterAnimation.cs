@@ -13,6 +13,7 @@ public class ProtesterAnimation : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     public void PlayFlag()
