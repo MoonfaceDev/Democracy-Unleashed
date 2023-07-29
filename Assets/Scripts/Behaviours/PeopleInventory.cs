@@ -15,8 +15,9 @@ public enum ProtesterType
 
 public class PeopleInventory : MonoBehaviour
 {
-    [HideInInspector] public int crowdSize;
     public UnityEvent<ProtesterType> onGainProtester;
+    
+    public int CrowdSize { get; private set; }
 
     private Dictionary<ProtesterType, bool> protesters;
 
@@ -25,6 +26,16 @@ public class PeopleInventory : MonoBehaviour
         protesters = Enum.GetValues(typeof(ProtesterType))
             .Cast<ProtesterType>()
             .ToDictionary(keySelector: leader => leader, elementSelector: _ => false);
+    }
+
+    public void GainCrowd(int amount)
+    {
+        CrowdSize += amount;
+    }
+
+    public void TakeCrowd(int amount)
+    {
+        CrowdSize = Mathf.Max(0, CrowdSize - amount);
     }
 
     public void GainProtester(ProtesterType protesterType)
