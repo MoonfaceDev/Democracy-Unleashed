@@ -5447,7 +5447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: requiredCrowd
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
@@ -6048,7 +6048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: requiredCrowd
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
@@ -6102,7 +6102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[5]
-      value: 'Shikma: I need 15 protesters to pass'
+      value: 'Shikma: I need 5 protesters to pass'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -12435,7 +12435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: requiredCrowd
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
@@ -12475,7 +12475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: Ok bring me 17 protesters'
+      value: 'Policeman: Ok bring me 10 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -15273,7 +15273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: requiredCrowd
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
@@ -15305,7 +15305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Shikma: I need 7 protesters to pass'
+      value: 'Shikma: I need 2 protesters to pass'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -15970,7 +15970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: requiredCrowd
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692284, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: isMajorBarrier
@@ -15998,7 +15998,7 @@ PrefabInstance:
       objectReference: {fileID: 1985428773}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Shikma: I need at least 2 protesters to pass...'
+      value: 'Shikma: I need at least 1 protesters to pass...'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
