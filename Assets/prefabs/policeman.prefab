@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6261228468297241610}
   - component: {fileID: 1754122169402370279}
   - component: {fileID: 7072829732204223310}
+  - component: {fileID: 4910018164453978316}
+  - component: {fileID: 855678096057627055}
   m_Layer: 0
   m_Name: Brain
   m_TagString: Untagged
@@ -48,6 +50,8 @@ MonoBehaviour:
   brainAnimator: {fileID: 4694519916164602943}
   modules:
   - {fileID: 7072829732204223310}
+  - {fileID: 4910018164453978316}
+  - {fileID: 855678096057627055}
 --- !u!114 &7072829732204223310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +65,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
+--- !u!114 &4910018164453978316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690252920737565400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6834b8cc1e147b747ba3f0c1710d3f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &855678096057627055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690252920737565400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edb5e7d16914f33a74068ab25ad7c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8631108220271786810
 GameObject:
   m_ObjectHideFlags: 0
