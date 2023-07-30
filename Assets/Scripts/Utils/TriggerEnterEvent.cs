@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class TriggerEnterEvent : MonoBehaviour
+{
+    public string targetTag;
+    public UnityEvent @event;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == targetTag)
+            @event.Invoke();
+
+    }
+}
