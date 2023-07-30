@@ -29,7 +29,7 @@ public class Trail : MonoBehaviour
                 trailDirection *= -1;
             }
 
-            currentPointIndex = (currentPointIndex + trailDirection) % trail.positionCount;
+            currentPointIndex = (trail.positionCount + currentPointIndex + trailDirection) % trail.positionCount;
         }
 
         walk.direction = (target - transform.position).normalized;
