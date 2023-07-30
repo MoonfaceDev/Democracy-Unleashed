@@ -10,7 +10,8 @@ public class Morale : MonoBehaviour
     public ExtEvent onLevelUp; //TODO: play protesting sound (whistle)
     [HideInInspector] public float points;
 
-    private int currentMilestone;
+    [HideInInspector]
+    public int currentMilestone;
 
     private PeopleInventory inventory;
 
