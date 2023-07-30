@@ -6104,15 +6104,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Policeman: speaking of democracy, You are breaking the LAW!!'
+      value: 'Policeman: Speaking of democracy, You are an anarchist breaking the
+        LAW!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: Retreat!!'
+      value: 'Shikma: You are acting violently against us, but we are not giving
+        up'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
-      value: '*NEW SKILL* press d-m-c-r-c to megaphone combo'
+      value: 'Policeman: Retreat!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082354402646, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12042,7 +12044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Lawyer: The supreme court must be independent in order to protect civil
+      value: 'Lawyer: The supreme court must be independent in order to protect human
         rights'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
@@ -12599,7 +12601,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 25, y: 0}
-  m_SizeDelta: {x: 250, y: 350}
+  m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &992126378
 MonoBehaviour:
@@ -12662,7 +12664,7 @@ MonoBehaviour:
     label: Maid
   - type: 2
     emoji: {fileID: -207710073, guid: fbe10b05208b703499abfa121b10b3b4, type: 3}
-    label: Hi Tech
+    label: HighTech
   - type: 4
     emoji: {fileID: 1862212610, guid: fbe10b05208b703499abfa121b10b3b4, type: 3}
     label: Doctor
@@ -13338,7 +13340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Pilot: hello im a pilot yey'
+      value: 'Pilot: It''s a breach of contract, simply a coup'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
@@ -13945,8 +13947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'High Tech Guy: The world''s biggest companies are afraid to invest
-        in israeli startups'
+      value: 'High Tech Guy: Leading companies are afraid to invest in israeli startups'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.Expanded
@@ -14647,8 +14648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Maid: This shameful government is full of Knesset members who suppress
-        women''s rights'
+      value: 'Maid: This shameful government is full of misogynistic extremists'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.Expanded
