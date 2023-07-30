@@ -5259,6 +5259,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6076778982662356792, guid: bdac1c5c0dfee7b4c907f8bd1022c3e1, type: 3}
   m_PrefabInstance: {fileID: 6076778982848382461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &206687061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6690252920737565400, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+  m_PrefabInstance: {fileID: 724900756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &206687065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206687061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92614307e0b19042ad225c02858ce59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMorale: {fileID: 2004705255}
 --- !u!1 &234299178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,6 +6742,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: modules.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: modules.Array.data[1]
+      value: 
+      objectReference: {fileID: 206687065}
     - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
@@ -12933,6 +12959,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &1137997212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6690252920737565400, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+  m_PrefabInstance: {fileID: 9042636698821275335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1137997216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137997212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92614307e0b19042ad225c02858ce59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMorale: {fileID: 2004705255}
 --- !u!1 &1154592149
 GameObject:
   m_ObjectHideFlags: 0
@@ -16009,7 +16053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1899780740}
   text: {fileID: 2019430386}
-  characterRate: 0.04
+  characterRate: 0.0004
   continueFlickerRate: 0.3
   onDialogShow:
     m_PersistentCalls:
@@ -16925,6 +16969,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: modules.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
+      propertyPath: modules.Array.data[1]
+      value: 
+      objectReference: {fileID: 1137997216}
     - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
