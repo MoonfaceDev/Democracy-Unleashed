@@ -16001,7 +16001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1899780740}
   text: {fileID: 2019430386}
-  characterRate: 0.04
+  characterRate: 0.0004
   continueFlickerRate: 0.3
   onDialogShow:
     m_PersistentCalls:
