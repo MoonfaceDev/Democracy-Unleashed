@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class LevelUI : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Morale morale;
 
-    
-    void Update()
+
+    private void Update()
     {
         text.text = "Next Reward: " + (morale.currentMilestone + 1);
     }

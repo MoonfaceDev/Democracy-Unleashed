@@ -19,6 +19,7 @@ public class Megaphone : MonoBehaviour
     public float voiceThreshold = 50;
     public float screamVoiceCost = 15;
     public float voiceRegenerationRate = 10;
+    public float hitForce;
 
     public UnityEvent onScream;
     public Collider2D megaphoneRange;
@@ -69,9 +70,13 @@ public class Megaphone : MonoBehaviour
         }
 
         voice -= screamVoiceCost;
-        BoostMorale();
+
+        var colliders = new List<Collider2D>();
+        megaphoneRange.OverlapCollider(new ContactFilter2D(), colliders);
+        BoostMorale(colliders);
+        Knockback(colliders);
+
         onScream.Invoke();
-        
         ProceedCombo(inputKey);
     }
 
@@ -84,16 +89,24 @@ public class Megaphone : MonoBehaviour
         }
     }
 
-    private void BoostMorale()
+    private void BoostMorale(IEnumerable<Collider2D> colliders)
     {
-        var overlappingColliders = new List<Collider2D>();
-        megaphoneRange.OverlapCollider(new ContactFilter2D(), overlappingColliders);
-        var accumulatedBoost = overlappingColliders.Aggregate(0, (currentProduct, nextCollider) =>
+        var accumulatedBoost = colliders.Aggregate(0, (currentProduct, nextCollider) =>
         {
             var entry = moraleBoostsEntries.SingleOrDefault(entry => nextCollider.CompareTag(entry.tag));
             return currentProduct + (entry?.boost ?? 0);
         });
         morale.BoostMorale(accumulatedBoost);
+    }
+
+    private void Knockback(IEnumerable<Collider2D> colliders)
+    {
+        foreach (var hitCollider in colliders.Where(hitCollider => hitCollider.CompareTag("Policeman")))
+        {
+            hitCollider.GetComponent<Knockback>().Apply(
+                hitForce * (hitCollider.transform.position - transform.position)
+            );
+        }
     }
 
     private void Update()

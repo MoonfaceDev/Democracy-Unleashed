@@ -5193,7 +5193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5259,37 +5259,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6076778982662356792, guid: bdac1c5c0dfee7b4c907f8bd1022c3e1, type: 3}
   m_PrefabInstance: {fileID: 6076778982848382461}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &206687061 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6690252920737565400, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-  m_PrefabInstance: {fileID: 724900756}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &206687065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206687061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92614307e0b19042ad225c02858ce59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMorale: {fileID: 2004705255}
---- !u!114 &206687069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206687061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6834b8cc1e147b747ba3f0c1710d3f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 1985428773}
 --- !u!1 &234299178
 GameObject:
   m_ObjectHideFlags: 0
@@ -5416,7 +5385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5504,7 +5473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Shikma: arent you worried for the future of our nation?'
+      value: 'Shikma: Aren''t you worried for the future of our nation?'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
@@ -5512,7 +5481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[4]
-      value: 'Shikma: ok I need 20 protesters'
+      value: 'Shikma: Ok I need 20 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -5620,9 +5589,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 28.599976, y: -165}
+  m_AnchoredPosition: {x: 25, y: -90}
   m_SizeDelta: {x: 300, y: 30}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &396497424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6017,7 +5986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6101,7 +6070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'policeman: once and for all the supreme court will lose its extreme
+      value: 'Policeman: Once and for all the supreme court will lose its extreme
         power'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
@@ -6110,12 +6079,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
-      value: 'Sikma: The ministers will pass any law they wish, anti LGBTQ laws for
-        example...'
+      value: 'Shikma: The ministers will pass any law they wish, anti LGBTQ laws
+        for example...'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[4]
-      value: 'policeman: Nonsense! get out of here SMOLANIT (lefty)'
+      value: 'Policeman: Nonsense! get out of here SMOLANIT (leftist)'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[5]
@@ -6135,15 +6104,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Policeman: speaking of democracy, You are breaking the LAW!!'
+      value: 'Policeman: Speaking of democracy, You are an anarchist breaking the
+        LAW!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: Retreat!!'
+      value: 'Shikma: You are acting violently against us, but we are not giving
+        up'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
-      value: '*NEW SKILL* press d-m-c-r-c to megaphone combo'
+      value: 'Policeman: Retreat!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082354402646, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6754,18 +6725,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[1]
-      value: 
-      objectReference: {fileID: 206687065}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[2]
-      value: 
-      objectReference: {fileID: 206687069}
     - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
@@ -6911,10 +6870,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 734566147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42ef72ce80fca6e48a4351a8e9a20ece, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fa53042ba6a45b3b697e8a4d7c7ea14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: Player
   event:
     m_PersistentCalls:
       m_Calls:
@@ -12086,7 +12044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Lawyer: The supreme court must be independent in order to protect civil
+      value: 'Lawyer: The supreme court must be independent in order to protect human
         rights'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
@@ -12200,7 +12158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12325,7 +12283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12409,12 +12367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Shikma: *waving flag and screaming* I AM HERE FOR THE NATIONAL DAY
-        OF DISRUPTION'
+      value: 'Shikma: We are determined Israelis fighting for our nation'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: ok bring me 17 protesters'
+      value: 'Policeman: Ok bring me 17 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -12641,11 +12598,11 @@ RectTransform:
   m_Father: {fileID: 1618790809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 25, y: -253}
-  m_SizeDelta: {x: 300, y: 400}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 300, y: 350}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &992126378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12707,7 +12664,7 @@ MonoBehaviour:
     label: Maid
   - type: 2
     emoji: {fileID: -207710073, guid: fbe10b05208b703499abfa121b10b3b4, type: 3}
-    label: Hi Tech
+    label: HighTech
   - type: 4
     emoji: {fileID: 1862212610, guid: fbe10b05208b703499abfa121b10b3b4, type: 3}
     label: Doctor
@@ -12728,12 +12685,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Left: 5
+    m_Right: 5
+    m_Top: 5
+    m_Bottom: 5
   m_ChildAlignment: 1
-  m_Spacing: 10
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -12943,7 +12900,7 @@ Transform:
   - {fileID: 980936222}
   - {fileID: 1147740613}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056168295
 GameObject:
@@ -13145,37 +13102,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!1 &1137997212 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6690252920737565400, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-  m_PrefabInstance: {fileID: 9042636698821275335}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1137997216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137997212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92614307e0b19042ad225c02858ce59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMorale: {fileID: 2004705255}
---- !u!114 &1137997220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137997212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6834b8cc1e147b747ba3f0c1710d3f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 1985428773}
 --- !u!1 &1147740612
 GameObject:
   m_ObjectHideFlags: 0
@@ -13381,7 +13307,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1166860645 stripped
 CircleCollider2D:
@@ -13414,7 +13340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Pilot: hello im a pilot yey'
+      value: 'Pilot: It''s a breach of contract, simply a coup'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
@@ -13882,7 +13808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14017,12 +13943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Hi Tec Guy: The judicial reform crashes the economy!'
+      value: 'High Tech Guy: The judicial reform crashes the economy!'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Hi Tec Guy: The world''s biggest companies are afraid to invest in
-        israeli startups '
+      value: 'High Tech Guy: Leading companies are afraid to invest in israeli startups'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.Expanded
@@ -14130,7 +14055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14194,141 +14119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1316c278fc3f41e6ac66828552a505df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1210696130
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1210696131}
-  - component: {fileID: 1210696133}
-  - component: {fileID: 1210696132}
-  m_Layer: 5
-  m_Name: morale
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1210696131
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210696130}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1618790809}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -832, y: 416.9}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1210696132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210696130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Moral
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f743cbbcd488d24aada338d4d535496, type: 2}
-  m_sharedMaterial: {fileID: -4408980896241170472, guid: 2f743cbbcd488d24aada338d4d535496, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 34
-  m_fontSizeBase: 34
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1210696133
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210696130}
-  m_CullTransparentMesh: 1
 --- !u!1 &1242249916
 GameObject:
   m_ObjectHideFlags: 0
@@ -14342,7 +14132,7 @@ GameObject:
   - component: {fileID: 1242249918}
   - component: {fileID: 1242249920}
   m_Layer: 5
-  m_Name: level
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14363,11 +14153,11 @@ RectTransform:
   m_Father: {fileID: 1618790809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -743.3, y: 341}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 25, y: -125}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1242249918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14423,7 +14213,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14451,7 +14241,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -89.80393, y: 0, z: -190.5646, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14609,7 +14399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14858,8 +14648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Maid: This shameful government is full of Knesset members who suppress
-        women''s rights'
+      value: 'Maid: This shameful government is full of misogynistic extremists'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.Expanded
@@ -14967,7 +14756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15067,9 +14856,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 25, y: -81}
+  m_AnchoredPosition: {x: 25, y: -25}
   m_SizeDelta: {x: 332.4, y: 50}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1396012426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15212,7 +15001,7 @@ Transform:
   - {fileID: 601554479}
   - {fileID: 1620577006}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489346725
 GameObject:
@@ -15332,7 +15121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15424,7 +15213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Shikma: hahaa Together we fight the corrupt government!!'
+      value: 'Shikma: Together we fight the corrupt government!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
@@ -15669,14 +15458,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 396497423}
-  - {fileID: 1985428772}
   - {fileID: 1396012425}
-  - {fileID: 992126377}
+  - {fileID: 396497423}
   - {fileID: 1242249917}
-  - {fileID: 1210696131}
+  - {fileID: 992126377}
+  - {fileID: 1985428772}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16029,7 +15817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692280, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16491,18 +16279,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[1]
-      value: 
-      objectReference: {fileID: 1916169179}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[2]
-      value: 
-      objectReference: {fileID: 206687069}
     - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 
@@ -16513,7 +16289,7 @@ PrefabInstance:
       objectReference: {fileID: 2004705246}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9042636698484821832, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16590,37 +16366,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
---- !u!1 &1916169178 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6690252920737565400, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-  m_PrefabInstance: {fileID: 1916169177}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1916169179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916169178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92614307e0b19042ad225c02858ce59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMorale: {fileID: 2004705255}
---- !u!114 &1916169183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916169178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6834b8cc1e147b747ba3f0c1710d3f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialog: {fileID: 1985428773}
 --- !u!1 &1985428771
 GameObject:
   m_ObjectHideFlags: 0
@@ -16676,7 +16421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 1899780740}
   text: {fileID: 2019430386}
-  characterRate: 0.0004
+  characterRate: 0.04
   continueFlickerRate: 0.3
   onDialogShow:
     m_PersistentCalls:
@@ -16989,6 +16734,7 @@ MonoBehaviour:
   voiceThreshold: 50
   screamVoiceCost: 15
   voiceRegenerationRate: 10
+  hitForce: 1
   onScream:
     m_PersistentCalls:
       m_Calls:
@@ -17376,7 +17122,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 423275889786397377, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 423275889786397377, guid: 88aa87f24f6898645a6d62ed4e89ac51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17471,7 +17217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 897042361157109644, guid: b06aba46516d32444bcf31b97950fd5f, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 897042361157109644, guid: b06aba46516d32444bcf31b97950fd5f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17607,18 +17353,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[1]
-      value: 
-      objectReference: {fileID: 1137997216}
-    - target: {fileID: 1754122169402370279, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
-      propertyPath: modules.Array.data[2]
-      value: 
-      objectReference: {fileID: 206687069}
     - target: {fileID: 8173677160984903190, guid: 6915199ecdad2b445a83a5412b3c0d49, type: 3}
       propertyPath: player
       value: 

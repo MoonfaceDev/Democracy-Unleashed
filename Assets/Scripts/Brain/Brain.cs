@@ -6,7 +6,7 @@ public class Brain : MonoBehaviour
     public Animator brainAnimator;
     public List<BrainModule> modules;
 
-    private void Awake()
+    private void Start()
     {
         modules.ForEach(module => module.Create(brainAnimator));
     }
