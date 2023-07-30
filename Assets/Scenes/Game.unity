@@ -12064,7 +12064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: ok bring me 1 protester'
+      value: 'Policeman: ok bring me 17 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -12076,11 +12076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Shikma: Thank you officer'
+      value: 'Policeman (Ami Eshed): Let her protest, she is fighting for our rights'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Policeman (Ami Eshed): Let her protest, she is fighting for our rights'
+      value: 'Shikma: Thank you officer'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082347229712, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15125,6 +15125,10 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 1985428773}
+    - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
+      propertyPath: messages.Array.data[1]
+      value: 'Shikma: I need at least 2 protesters to pass...'
+      objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
       value: 
@@ -15744,6 +15748,9 @@ MonoBehaviour:
   messages:
   - Hi I'm Shikma
   - De-mo-cra-cy!
+  - Press F to use the megaphone
+  - hit as many officers as you can with it!
+  - when the morale bar is full you will gain protesters
   onConversationEnd:
     _persistentListeners: []
     Expanded: 1
