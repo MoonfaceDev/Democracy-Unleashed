@@ -8,4 +8,20 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Cavalary
   m_Controller: {fileID: 9100000, guid: 3eb7df66ce667744abdc37269905bb77, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f35ebd76ff12f4144acdb957777b0e7f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fee46d2acc1a05446aca59ba901351b7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 480b7aff931d4d647a68c3bccc560be6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5a06acc28981066409d7c8ae40312339, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 48f3050119f4eeb4ca2c1301843fefd0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 28f724a5dba6ebd408a82aca3348b049, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d81508ff41ba4bd4d873ad14bf14eb28, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9f93bde0f4460d1438b85bf925f874d1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 01bcc1fbb548c4b41bc0ed89a5524bcb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5a7ef39cb57cd994bafe9a1428e33ac8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 02879c62f3966fd47a3b2a21b8fda55c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 10c92132b044970458f97aec7a78c6e9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bb23c25cf34b61a4d8f4c1dc1e52895d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 449d19417297fa74b883bd8fb42dac10, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0c8d878be12b00e41bd4f9c586162406, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a0ff845f34e552c4082b3ec61205d499, type: 2}
