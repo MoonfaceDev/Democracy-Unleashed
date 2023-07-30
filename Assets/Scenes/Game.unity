@@ -11718,6 +11718,10 @@ PrefabInstance:
       propertyPath: type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3287219954223319526, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_Controller
       value: 
@@ -11818,7 +11822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd._persistentListeners.Array.data[1]._persistentArguments.Array.data[1]._serializationData.SerializationNodes.Array.data[0].Data
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd._persistentListeners.Array.data[1]._persistentArguments.Array.data[0]._serializationData.SerializationNodes.Array.data[0].Entry
@@ -12705,6 +12709,10 @@ PrefabInstance:
       propertyPath: type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3287219954223319526, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_Controller
       value: 
@@ -13304,6 +13312,10 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3287219954223319526, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_Controller
       value: 
@@ -13502,6 +13514,10 @@ PrefabInstance:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287219954223319526, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_Controller
@@ -13847,6 +13863,10 @@ PrefabInstance:
     - target: {fileID: 523384185762771285, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3287219954223319526, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210907566665342345, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: m_Controller
@@ -16104,7 +16124,7 @@ MonoBehaviour:
         _serializationData:
           DataFormat: 2
           ReferencedUnityObjects:
-          - {fileID: 8300000, guid: f7dc6a2d81986d2418e7bef7c3a7ccf5, type: 3}
+          - {fileID: 8300000, guid: e3b94ce945aceb44ca97f610a5949229, type: 3}
           SerializationNodes:
           - Name: 
             Entry: 10
