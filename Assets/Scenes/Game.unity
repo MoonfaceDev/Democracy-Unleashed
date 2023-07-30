@@ -5473,7 +5473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Shikma: arent you worried for the future of our nation?'
+      value: 'Shikma: Aren''t you worried for the future of our nation?'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
@@ -5481,7 +5481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[4]
-      value: 'Shikma: ok I need 20 protesters'
+      value: 'Shikma: Ok I need 20 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -6070,7 +6070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'policeman: once and for all the supreme court will lose its extreme
+      value: 'Policeman: Once and for all the supreme court will lose its extreme
         power'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
@@ -6079,12 +6079,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[3]
-      value: 'Sikma: The ministers will pass any law they wish, anti LGBTQ laws for
-        example...'
+      value: 'Shikma: The ministers will pass any law they wish, anti LGBTQ laws
+        for example...'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[4]
-      value: 'policeman: Nonsense! get out of here SMOLANIT (lefty)'
+      value: 'Policeman: Nonsense! get out of here SMOLANIT (leftist)'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[5]
@@ -12365,12 +12365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Shikma: *waving flag and screaming* I AM HERE FOR THE NATIONAL DAY
-        OF DISRUPTION'
+      value: 'Shikma: We are determined Israelis fighting for our nation'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692285, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[2]
-      value: 'Policeman: ok bring me 17 protesters'
+      value: 'Policeman: Ok bring me 17 protesters'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: dialog
@@ -13942,12 +13941,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Hi Tec Guy: The judicial reform crashes the economy!'
+      value: 'High Tech Guy: The judicial reform crashes the economy!'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: messages.Array.data[1]
-      value: 'Hi Tec Guy: The world''s biggest companies are afraid to invest in
-        israeli startups '
+      value: 'High Tech Guy: The world''s biggest companies are afraid to invest
+        in israeli startups'
       objectReference: {fileID: 0}
     - target: {fileID: 6950207100677969228, guid: 00a1080a50c59894aacd14d6feb239fe, type: 3}
       propertyPath: onConversationEnd.Expanded
@@ -15214,7 +15213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[0]
-      value: 'Shikma: hahaa Together we fight the corrupt government!!'
+      value: 'Shikma: Together we fight the corrupt government!!'
       objectReference: {fileID: 0}
     - target: {fileID: 3941644082071692287, guid: 32b4dc43743abad49bacf16af45b90de, type: 3}
       propertyPath: messages.Array.data[1]
