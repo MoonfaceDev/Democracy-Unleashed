@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 8173677160984903190}
   - component: {fileID: 4694519916164602943}
   - component: {fileID: 2473509856331119234}
+  - component: {fileID: 3448098923269535240}
   m_Layer: 0
   m_Name: policeman
   m_TagString: Policeman
@@ -406,6 +407,19 @@ MonoBehaviour:
           m_StringArgument: catch
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3448098923269535240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042636698484821835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6c81fede204df3aad42ffb843ca65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkCooldownDuration: 0.5
 --- !u!1001 &5521321869736461249
 PrefabInstance:
   m_ObjectHideFlags: 0

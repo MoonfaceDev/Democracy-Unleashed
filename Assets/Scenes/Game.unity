@@ -16735,6 +16735,7 @@ MonoBehaviour:
   voiceThreshold: 50
   screamVoiceCost: 15
   voiceRegenerationRate: 10
+  hitForce: 1
   onScream:
     m_PersistentCalls:
       m_Calls:
