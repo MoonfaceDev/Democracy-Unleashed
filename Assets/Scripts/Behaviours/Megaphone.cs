@@ -25,29 +25,27 @@ public class Megaphone : MonoBehaviour
     public Collider2D megaphoneRange;
     public List<MoraleBoostEntry> moraleBoostsEntries;
     [FormerlySerializedAs("Combos")] public Combo[] combos;
+    public float comboCooldownDuration;
 
     [HideInInspector] public float voice;
-    [HideInInspector] public bool canCombo;
 
     private Morale morale;
     private bool isCooldown;
+    private float lastComboTime;
 
     private void Awake()
     {
         morale = GetComponent<Morale>();
         voice = maxVoice;
-        canCombo = true;
         foreach (var combo in combos)
         {
             combo.onCompleted += () =>
             {
                 ResetCombos();
-                canCombo = false;
-                morale.MultiplyMorale(2);
+                lastComboTime = Time.time;
+                morale.ApplyTurbo();
             };
         }
-
-        morale.onLevelUp += () => canCombo = true;
     }
 
     private void ResetCombos()
@@ -80,9 +78,14 @@ public class Megaphone : MonoBehaviour
         ProceedCombo(inputKey);
     }
 
+    public bool IsComboCooldown()
+    {
+        return Time.time - lastComboTime < comboCooldownDuration;
+    }
+
     private void ProceedCombo(KeyCode inputKey)
     {
-        if (!canCombo) return;
+        if (IsComboCooldown()) return;
         foreach (var combo in combos)
         {
             combo.Proceed(inputKey);
