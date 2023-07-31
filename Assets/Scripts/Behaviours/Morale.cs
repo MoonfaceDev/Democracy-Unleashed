@@ -1,6 +1,6 @@
-using UnityEngine;
-using UnityEngine.Events;
+using System.Collections;
 using ExtEvents;
+using UnityEngine;
 
 [RequireComponent(typeof(PeopleInventory))]
 public class Morale : MonoBehaviour
@@ -8,10 +8,15 @@ public class Morale : MonoBehaviour
     public int[] milestones;
     public float moraleDecay;
     public ExtEvent onLevelUp; //TODO: play protesting sound (whistle)
-    [HideInInspector] public float points;
 
-    [HideInInspector]
-    public int currentMilestone;
+    [Header("Turbo")] public float turboMultiplier = 1;
+    public float turboDuration;
+    public ExtEvent onTurboStart;
+    public ExtEvent onTurboEnd;
+
+    [HideInInspector] public float points;
+    [HideInInspector] public int currentMilestone;
+    [HideInInspector] public float multiplier = 1;
 
     private PeopleInventory inventory;
 
@@ -32,16 +37,25 @@ public class Morale : MonoBehaviour
             return;
         }
 
-        points += boost;
+        points += boost * multiplier;
         if (points > milestones[currentMilestone])
         {
             LevelUp();
         }
     }
-    
-    public void MultiplyMorale(float multiplier)
+
+    public void ApplyTurbo()
     {
-        BoostMorale((int)(points * multiplier - points));
+        StartCoroutine(MultiplierCoroutine());
+    }
+
+    private IEnumerator MultiplierCoroutine()
+    {
+        multiplier *= turboMultiplier;
+        onTurboStart.Invoke();
+        yield return new WaitForSeconds(turboDuration);
+        multiplier /= turboMultiplier;
+        onTurboEnd.Invoke();
     }
 
     private void LevelUp()
