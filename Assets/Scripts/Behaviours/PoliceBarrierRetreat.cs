@@ -27,10 +27,12 @@ public class PoliceBarrierRetreat : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         var start = transform.position;
         var end = start + Quaternion.Euler(0, 0, angle) * Vector3.right * 3;
         Handles.DrawBezier(start, end, start, end, Color.blue, null, 10);
     }
+#endif
 }

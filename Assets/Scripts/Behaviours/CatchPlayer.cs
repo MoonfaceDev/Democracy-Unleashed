@@ -3,7 +3,6 @@ using UnityEngine.Events;
 
 public class CatchPlayer : MonoBehaviour
 {
-    public int crowdTaken;
     public MonoBehaviour chasingBehaviour;
     public UnityEvent onCatch;
 
@@ -11,7 +10,7 @@ public class CatchPlayer : MonoBehaviour
     {
         if (chasingBehaviour.enabled && other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PeopleInventory>().TakeCrowd(crowdTaken);
+            other.gameObject.GetComponent<Morale>().ResetMorale();
             onCatch.Invoke();
         }
     }

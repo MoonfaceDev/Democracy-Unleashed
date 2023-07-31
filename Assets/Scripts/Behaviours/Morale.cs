@@ -1,6 +1,6 @@
-using UnityEngine;
-using UnityEngine.Events;
+using System.Collections;
 using ExtEvents;
+using UnityEngine;
 
 [RequireComponent(typeof(PeopleInventory))]
 public class Morale : MonoBehaviour
@@ -10,8 +10,7 @@ public class Morale : MonoBehaviour
     public ExtEvent onLevelUp; //TODO: play protesting sound (whistle)
     [HideInInspector] public float points;
 
-    [HideInInspector]
-    public int currentMilestone;
+    [HideInInspector] public int currentMilestone;
 
     private PeopleInventory inventory;
 
@@ -38,7 +37,7 @@ public class Morale : MonoBehaviour
             LevelUp();
         }
     }
-    
+
     public void MultiplyMorale(float multiplier)
     {
         BoostMorale((int)(points * multiplier - points));
@@ -50,6 +49,19 @@ public class Morale : MonoBehaviour
         currentMilestone++;
         inventory.GainCrowd(currentMilestone);
         onLevelUp.Invoke();
+    }
+
+    public void ResetMorale()
+    {
+        points = 0;
+        StartCoroutine(Flicker());
+    }
+
+    private IEnumerator Flicker()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public float ProgressToNextMilestone =>
